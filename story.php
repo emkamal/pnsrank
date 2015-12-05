@@ -1,4 +1,5 @@
 <?php include("header.php"); ?>
+<?php include("menu.php"); ?>
 
 
     <section id="blog" class="container">

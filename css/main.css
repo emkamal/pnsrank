@@ -2528,5 +2528,53 @@ shortcodes page css
 
 
 
+body {
+  margin-top: 89px;
+}
+.navbar-brand > h1 {
+  margin: 10px 0;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.pagebar {
+  background: rgba(0, 0, 0, 0.74) none repeat scroll 0 0;
+  color: #fff;
+  font-size: 25px;
+  padding: 20px;
+}
+.navbar {
+  background: rgba(21, 21, 21, 0.93) none repeat scroll 0 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 15px 0 0;
+}
+.navbar-nav > li {
+  margin-left: 10px;
+  padding-bottom: 28px;
+}
+body > section {
+  padding: 130px 0;
+}
+.tonational, #areaSelector_chosen{
+	float: right;
+	margin-left: 20px;
+}
+.tonational{
+	font-size: 16px;
+}
+.score {
+  display: block;
+  font-size: 60px;
+  padding: 10px 0 20px;
+}
+#profile {
+  margin-top: -70px;
+}
+
+
 
 

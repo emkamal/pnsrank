@@ -1,11 +1,6 @@
 <?php include("header.php"); ?>
 <?php 
-if(isset($_GET['area'])) {
-    $area = $_GET['area'];
-}
-else{
-	$area = 'wilayah Anda';
-}
+$area = "nasional";
 include("menu.php"); ?>
 
     <section id="main-slider" class="no-margin">
@@ -90,285 +85,16 @@ include("menu.php"); ?>
         </a>
     </section><!--/#main-slider-->
 
-	<!-- --
-    <section id="feature" >
-        <div class="container">
-           <div class="center wow fadeInDown">
-                <h2>Features</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
-            </div>
-
-            <div class="row">
-                <div class="features">
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-bullhorn"></i>
-                            <h2>Fresh and Clean</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-comments"></i>
-                            <h2>Retina ready</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-cloud-download"></i>
-                            <h2>Easy to customize</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                        </div>
-                    </div>
-                
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-leaf"></i>
-                            <h2>Adipisicing elit</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-cogs"></i>
-                            <h2>Sed do eiusmod</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-                        <div class="feature-wrap">
-                            <i class="fa fa-heart"></i>
-                            <h2>Labore et dolore</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-                        </div>
-                    </div><!--/.col-md-4--
-                </div><!--/.services--
-            </div><!--/.row--   
-        </div><!--/.container--
-    </section><!--/#feature-->
-
-    <section id="pnsteladan">
-        <div class="container">
-            <div class="center wow fadeInDown">
-                <h2>PNS Teladan Bulan Ini</h2>
-                <p class="lead">Berikut ini adalah daftar PNS teladan bulan ini (Desember 2015)</p>
-            </div>
-
-            <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="profile.php">Dadang Suherman</a> </h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <!--<a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>-->
-                                <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="profile.php">Dudung Sugiman</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="profile.php">Mang Engking</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="profile.php">Haji Sabeni</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-                <!--
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item5.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="images/portfolio/full/item5.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item6.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="images/portfolio/full/item6.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item7.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="images/portfolio/full/item7.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-
-                <div class="col-xs-12 col-sm-4 col-md-3">
-                    <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item8.png" alt="">
-                        <div class="overlay">
-                            <div class="recent-work-inner">
-                                <h3><a href="#">Business theme </a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
-                                <a class="preview" href="images/portfolio/full/item8.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>
-                            </div> 
-                        </div>
-                    </div>
-                </div>   
-				-->
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#recent-works-->
-
-    <section id="lencana" class="service-item">
-	   <div class="container">
-            <div class="center wow fadeInDown">
-                <h2>Lencana Penghargaan</h2>
-                <p class="lead">Dibawah ini ceritanya daftar lencana penghargaan yang bisa didapat oleh para PNS. Dari sini user juga bisa liat siapa-siapa aja PNS yang dapat lencana penghargaan dibawah</p>
-            </div>
-
-            <div class="row">
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services1.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Performa Terbaik</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-							<a href="#">lihat</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services2.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Disiplin</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-							<a href="#">lihat</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services3.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Problem Solver</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-							<a href="#">lihat</a>
-                        </div>
-                    </div>
-                </div>  
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services4.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Ide Brilian</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-							<a href="#">lihat</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services5.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Melek Teknologi</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-							<a href="#">lihat</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-6 col-md-4">
-                    <div class="media services-wrap wow fadeInDown">
-                        <div class="pull-left">
-                            <img class="img-responsive" src="images/services/services6.png">
-                        </div>
-                        <div class="media-body">
-                            <h3 class="media-heading">Helpful</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
-							<a href="#">lihat</a>
-                        </div>
-                    </div>
-                </div>                                                
-            </div><!--/.row-->
-        </div><!--/.container-->
-    </section><!--/#services-->
-
-    <section id="statistik">
+    <section id="middle">
         <div class="container">
             <div class="row">
                 <div class="col-sm-6 wow fadeInDown">
                     <div class="skill">
-                        <h2>Kecamatan Terbaik</h2>
+                        <h2>Daerah Terbaik</h2>
                         <p>Ini ceritanya daftar 4 daerah yang skor pelayanan publiknya paling tinggi</p>
 
                         <div class="progress-wrap">
-                            <h3>Antapani</h3>
+                            <h3>Bandung</h3>
                             <div class="progress">
                               <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 97%">
                                 <span class="bar-width">97%</span>
@@ -378,7 +104,7 @@ include("menu.php"); ?>
                         </div>
 
                         <div class="progress-wrap">
-                            <h3>Arcamanik</h3>
+                            <h3>Surabaya</h3>
                             <div class="progress">
                               <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
                                <span class="bar-width">95%</span>
@@ -387,7 +113,7 @@ include("menu.php"); ?>
                         </div>
 
                         <div class="progress-wrap">
-                            <h3>Buahbatu</h3>
+                            <h3>Papua</h3>
                             <div class="progress">
                               <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
                                 <span class="bar-width">80%</span>
@@ -396,7 +122,7 @@ include("menu.php"); ?>
                         </div>
 
                         <div class="progress-wrap">
-                            <h3>Gedebage</h3>
+                            <h3>Bali</h3>
                             <div class="progress">
                               <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 79%">
                                 <span class="bar-width">79%</span>
@@ -406,53 +132,86 @@ include("menu.php"); ?>
                     </div>
 
                 </div><!--/.col-sm-6-->
-				
-				<div class="col-sm-6 wow fadeInDown">
-                    <div class="skill">
-                        <h2>Keluarahan Terbaik</h2>
-                        <p>Ini ceritanya daftar 4 daerah yang skor pelayanan publiknya paling tinggi</p>
 
-                        <div class="progress-wrap">
-                            <h3>Dago</h3>
-                            <div class="progress">
-                              <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 87%">
-                                <span class="bar-width">87%</span>
-                              </div>
-
+                <div class="col-sm-6 wow fadeInDown">
+                    <div class="accordion">
+                        <h2>Data insight</h2>
+                        <div class="panel-group" id="accordion1">
+                          <div class="panel panel-default">
+                            <div class="panel-heading active">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne1">
+                                  50% PNS teladan dari Papua
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
                             </div>
-                        </div>
 
-                        <div class="progress-wrap">
-                            <h3>Kopo</h3>
-                            <div class="progress">
-                              <div class="progress-bar color2" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 86%">
-                               <span class="bar-width">86%</span>
-                              </div>
-                            </div>
-                        </div>
-
-                        <div class="progress-wrap">
-                            <h3>Braga</h3>
-                            <div class="progress">
-                              <div class="progress-bar color3" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                <span class="bar-width">80%</span>
+                            <div id="collapseOne1" class="panel-collapse collapse in">
+                              <div class="panel-body">
+                                  <div class="media accordion-inner">
+                                        <div class="pull-left">
+                                            <img class="img-responsive" src="images/accordion1.png">
+                                        </div>
+                                        <div class="media-body">
+                                             <h4>Adipisicing elit</h4>
+                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                        </div>
+                                  </div>
                               </div>
                             </div>
-                        </div>
+                          </div>
 
-                        <div class="progress-wrap">
-                            <h3>Merdeka</h3>
-                            <div class="progress">
-                              <div class="progress-bar color4" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 32%">
-                                <span class="bar-width">32%</span>
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo1">
+                                  Kategori pelayanan terbaik ada di perpajakan
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseTwo1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
                               </div>
                             </div>
-                        </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree1">
+                                  Rata2 skor pelayanan nasional naik 30% dalam 6 bulan terakhir
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseThree1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="panel panel-default">
+                            <div class="panel-heading">
+                              <h3 class="panel-title">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour1">
+                                  Tingkat kepuasan pelayanan di Jakarta naik drastis
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </a>
+                              </h3>
+                            </div>
+                            <div id="collapseFour1" class="panel-collapse collapse">
+                              <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor.
+                              </div>
+                            </div>
+                          </div>
+                        </div><!--/#accordion1-->
                     </div>
-
-                </div><!--/.col-sm-6-->
-
-                
+                </div>
 
             </div><!--/.row-->
         </div><!--/.container-->
@@ -549,16 +308,16 @@ include("menu.php"); ?>
         </div><!--/.container--
     </section><!--/#content-->
 	
-	<section id="peta">
+	<section id="areas">
         <div class="container">
             <div class="center wow fadeInDown">
                 <h2>Data Per Daerah</h2>
-                <p class="lead">Peta dibawah akan bersifat interaktif sehingga bisa di klik setiap sub wilayahnya agar dapat menampilkan portal per subwilayah</p>
+                <p class="lead">Klik daerah yang dilihat datanya</p>
             </div>
 
             <div class="row">
                 <div class="center">
-                    <img src="images/bandungmap.png" width="50%"/>
+                    <img src="images/map.png" />
                 </div>   
             </div>
 		</div>   

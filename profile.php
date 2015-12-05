@@ -1,7 +1,8 @@
 <?php include("header.php"); ?>
+<?php $area = "menu";
+include("menu.php"); ?>
 	<section id="profile">
 		<div class="container">
-			<h2>Profil PNS</h2>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 					<img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
@@ -25,7 +26,8 @@
 				<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1000ms">
 					<div class="feature-wrap">
 						<h2>Skor Pelayanan</h2>
-						<h3>78/100</h3>
+						<div class="scorebox"><span class="score">78</span>
+						<span class="maxscore">dari 100</span></div>
 					</div>
 				</div>
 			</div>

@@ -6,6 +6,8 @@ jQuery(function($) {'use strict',
 			interval: 8000
 		});
 	});
+	
+	$("#areaSelector").chosen();
 
 
 	// accordian
