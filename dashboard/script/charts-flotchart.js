@@ -278,17 +278,17 @@ $(function () {
     var d7_3 = [40];
     $.plot('#pie-chart', [{
         data: d7_1,
-        label: "Search Engines",
+        label: "Feedback positif",
         color: "#3DB9D3"
     },
     {
         data: d7_2,
-        label: "Referrals",
+        label: "Feedback netral",
         color: "#ffce54"
     },
     {
         data: d7_3,
-        label: "Direct",
+        label: "Feedback negatif",
         color: "#fc6e51"
     }], {
     series: {
