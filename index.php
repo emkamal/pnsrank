@@ -343,7 +343,7 @@ include("menu.php"); ?>
                 <div class="col-sm-6 wow fadeInDown">
                     <div class="skill">
                         <h2>Kecamatan Terbaik</h2>
-                        <p>Ini ceritanya daftar 4 daerah yang skor pelayanan publiknya paling tinggi</p>
+                        <p>Ini adalah daftar 4 kecamatan yang skor pelayanan publiknya paling tinggi di <?php echo $area; ?> </p>
 
                         <div class="progress-wrap">
                             <h3>Antapani</h3>
@@ -388,7 +388,7 @@ include("menu.php"); ?>
 				<div class="col-sm-6 wow fadeInDown">
                     <div class="skill">
                         <h2>Keluarahan Terbaik</h2>
-                        <p>Ini ceritanya daftar 4 daerah yang skor pelayanan publiknya paling tinggi</p>
+                        <p>Ini adalah daftar 4 kelurahan yang skor pelayanan publiknya paling tinggi di <?php echo $area; ?> </p>
 
                         <div class="progress-wrap">
                             <h3>Dago</h3>

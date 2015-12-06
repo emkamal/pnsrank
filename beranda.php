@@ -70,7 +70,7 @@ include("menu.php"); ?>
                 <div class="col-sm-6 wow fadeInDown">
                     <div class="skill">
                         <h2>Daerah Terbaik</h2>
-                        <p>Ini ceritanya daftar 4 daerah yang skor pelayanan publiknya paling tinggi</p>
+                        <p>Ini adalah daftar 4 daerah yang skor pelayanan publiknya paling tinggi se-Indonesia</p>
 
                         <div class="progress-wrap">
                             <h3>Bandung</h3>
@@ -78,7 +78,6 @@ include("menu.php"); ?>
                               <div class="progress-bar  color1" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 97%">
                                 <span class="bar-width">97%</span>
                               </div>
-
                             </div>
                         </div>
 
@@ -133,8 +132,8 @@ include("menu.php"); ?>
                                             <img class="img-responsive" src="images/accordion1.png">
                                         </div>
                                         <div class="media-body">
-                                             <h4>Adipisicing elit</h4>
-                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                                             <h4>Prestasi Papua</h4>
+                                             <p>Papua memegang rekor sebagai daerah yang memiliki PNS teladan terbanyak di Indonesia. Sebanyak 50% PNS Teladan di Indonesia adalah PNS yang memiliki area kerja di Papua</p>
                                         </div>
                                   </div>
                               </div>

@@ -229,7 +229,7 @@
                                                 <h4 class="mbs">
                                                     Performa Skor</h4>
                                                 <p class="help-block">
-                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+                                                    Berikut ini adalah performa skor pelayanan bulanan Anda dibandingkan dengan skor rata-rata bulanan dari kantor Anda</p>
                                                 <div id="area-chart-spline" style="width: 100%; height: 300px">
                                                 </div>
                                             </div>

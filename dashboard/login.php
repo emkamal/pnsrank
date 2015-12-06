@@ -1,6 +1,10 @@
 <?php
 include("../globalconfig.php");
 include("mysql_conn.php");
+
+if(isset($_SESSION['loggedInPNS'])){
+	header("Location: index.php");
+} 
 if(isset($_GET['text'])){ $text = $_GET['text']; }
 else{
 	$text = "untuk masuk ke dashboard MataLayan";
@@ -40,16 +44,16 @@ else{
     <link type="text/css" rel="stylesheet" href="styles/main.css">
     <link type="text/css" rel="stylesheet" href="styles/style-responsive.css">
 </head>
-<body style="background: url('images/bg/bg.png') center center fixed;">
+<body style="background: url('images/bg/bg.png') center center fixed;" class="loginpage">
     <div class="page-form">
         <div class="panel panel-blue">
             <div class="panel-body pan">
                 <form action="login.php" method="post" class="form-horizontal">
                 <div class="form-body pal">
                     <div class="col-md-12 text-center">
-                        <h1 style="margin-top: -90px; font-size: 48px;">
+                        <!--<h1 style="font-size: 48px;">
                             Login MataLayan</h1>
-                        <br />
+                        <br />-->
                     </div>
                     <div class="form-group">
                         <div class="col-md-3">
@@ -87,7 +91,7 @@ else{
                                     &nbsp;
                                 </div>
                                 <div class="col-lg-9">
-                                    <a href="Login.html" class="btn btn-default">Go back</a>&nbsp;&nbsp;
+                                    <a href="../index.php" class="btn btn-default">Ke beranda</a>&nbsp;&nbsp;
                                     <button type="submit" class="btn btn-default">
                                         Sign In</button>
                                 </div>
@@ -97,11 +101,6 @@ else{
                 </div>
                 </form>
             </div>
-        </div>
-        <div class="col-lg-12 text-center">
-            <p>
-                Forgot Something ?
-            </p>
         </div>
     </div>
 </body>
