@@ -1,4 +1,5 @@
 <?php include("header.php"); ?>
+<?php include("mysql_conn.php"); ?>
         <div id="wrapper">
             <!--BEGIN SIDEBAR MENU-->
             <nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;"
@@ -38,21 +39,21 @@
                                             <div class="panel-heading">
                                                 Input Data Pelayanan</div>
                                             <div class="panel-body pan">
-                                                <form action="#">
+                                                <form action="Forms_submit.php" method="post">
                                                 <div class="form-body pal">
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
                                                                 <div class="input-icon">
                                                                     <i class="fa fa-user"></i>
-                                                                    <input id="inputFirstName" type="text" placeholder="No KTP Terlayan" class="form-control" /></div>
+                                                                    <input id="inputKTP" name="inputKTP" type="text" placeholder="No KTP Terlayan" class="form-control" /></div>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
                                                                 <div class="input-icon">
                                                                     <i class="fa fa-user"></i>
-                                                                    <input id="inputLastName" type="text" placeholder="Nama lengkap terlayan" class="form-control" /></div>
+                                                                    <input id="inputName" name="inputName" type="text" placeholder="Nama lengkap terlayan" class="form-control" /></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -61,14 +62,14 @@
                                                             <div class="form-group">
                                                                 <div class="input-icon">
                                                                     <i class="fa fa-envelope"></i>
-                                                                    <input id="inputEmail" type="text" placeholder="E-mail" class="form-control" /></div>
+                                                                    <input id="inputEmail" name="inputEmail" type="text" placeholder="E-mail" class="form-control" /></div>
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-group">
                                                                 <div class="input-icon">
                                                                     <i class="fa fa-phone"></i>
-                                                                    <input id="inputPhone" type="text" placeholder="Phone" class="form-control" /></div>
+                                                                    <input id="inputPhone" name="inputPhone" type="text" placeholder="Phone" class="form-control" /></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -82,23 +83,36 @@
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <input id="inputCity" type="text" placeholder="City" class="form-control" /></div>
+                                                                <select id="inputCity" name="inputCity" class="form-control">
+                                                                    <?php
+                                                                    $result = getListKota(2);
+                                                                    while($row = mysqli_fetch_assoc($result)) {
+                                                                        echo "<option value=".$row["idArea"].">".$row["namaArea"]."</option><br>";
+                                                                    }
+                                                                    ?>
+                                                                </select>
+                                                            </div>
                                                         </div>
                                                         <div class="col-md-4">
                                                             <div class="form-group">
-                                                                <input id="inputPostCode" type="text" placeholder="Post code" class="form-control" /></div>
+                                                                <input id="inputPostCode" name="inputPostCode" type="text" placeholder="Post code" class="form-control" /></div>
                                                         </div>
                                                     </div>
                                                     <div class="form-group">
-                                                        <input id="inputAddress" type="text" placeholder="Address" class="form-control" /></div>
+                                                        <input id="inputAddress" name="inputAddress" type="text" placeholder="Address" class="form-control" /></div>
                                                     
                                                     <hr />
                                                     <div class="form-group">
-                                                                <select class="form-control">
-                                                                    <option>Jenis Pelayanan</option>
-                                                                </select></div>
+                                                        <select id="inputPelayanan" name="inputPelayanan" class="form-control">
+                                                            <?php
+                                                            $result = getListPelayanan();
+                                                            while($row = mysqli_fetch_assoc($result)) {
+                                                                echo "<option value=".$row["idTypePelayanan"].">".$row["jenisPelayanan"]."</option><br>";
+                                                            }
+                                                            ?>
+                                                        </select>
 													<div class="form-group">
-                                                        <textarea rows="5" placeholder="Additional info" class="form-control"></textarea></div>
+                                                        <textarea id="inputInfo" name="inputInfo" rows="5" placeholder="Additional info" class="form-control"></textarea></div>
                                                 </div>
                                                 <div class="form-actions text-right pal">
                                                     <button type="submit" class="btn btn-primary">
