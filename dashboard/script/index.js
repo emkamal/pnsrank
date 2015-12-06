@@ -160,10 +160,12 @@ $(function () {
     //END CHAT FORM
 
     //BEGIN COUNTER FOR SUMMARY BOX
-    counterNum($(".profit h4 span:first-child"), 0, 78, 1, 5);
-    counterNum($(".income h4 span:first-child"), 0, 54, 1, 10);
-    counterNum($(".task h4 span:first-child"), 0, 300, 3, 15);
+    /*
+    counterNum($(".profit h4 span:first-child"), 0, $("#skorpersonal").innerHTML(), 1, 5);
+    counterNum($(".income h4 span:first-child"), 0, $("#skorkantor").innerHTML(), 1, 10);
+    counterNum($(".task h4 span:first-child"), 0, $("#jumlahpelayanan").innerHTML(), 3, 15);
     counterNum($(".visit h4 span:first-child"), 0, 376, 3, 20);
+*/
     function counterNum(obj, start, end, step, duration) {
         $(obj).html(start);
         setInterval(function(){

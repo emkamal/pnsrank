@@ -1,6 +1,5 @@
 <?php include("header.php"); ?>
 <?php
-include("mysql_conn.php");
 $result = getPNSData($_SESSION['loggedInPNS']);
 $dataPNS = mysqli_fetch_assoc($result);
 ?>

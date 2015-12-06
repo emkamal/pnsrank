@@ -1,9 +1,14 @@
-<?php include("../globalconfig.php"); 
+<?php
+include("../globalconfig.php");
+include("mysql_conn.php");
 
 if(!isset($_SESSION['loggedInPNS'])){
 	header("Location: login.php?text='Please log in first'");
 	die();
 }
+
+$result = getPNSData($_SESSION['loggedInPNS']);
+$dataPNS = mysqli_fetch_assoc($result);
 
 ?>
 <!DOCTYPE html>
@@ -49,7 +54,7 @@ if(!isset($_SESSION['loggedInPNS'])){
                 
                 <ul class="nav navbar navbar-top-links navbar-right mbn">
                     
-                    <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img src="images/avatar/48.jpg" alt="" class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs">Robert John</span>&nbsp;<span class="caret"></span></a>
+                    <li class="dropdown topbar-user"><a data-hover="dropdown" href="#" class="dropdown-toggle"><img src="images/avatar/48.jpg" alt="" class="img-responsive img-circle"/>&nbsp;<span class="hidden-xs"><?php echo $dataPNS["NamaPNS"] ?></span>&nbsp;<span class="caret"></span></a>
                         <ul class="dropdown-menu dropdown-user pull-right">
                             <li><a href="#"><i class="fa fa-user"></i>My Profile</a></li>
                             <li><a href="#"><i class="fa fa-calendar"></i>My Calendar</a></li>

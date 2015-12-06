@@ -40,6 +40,26 @@ if ($result) {
 mysqli_close($conn);
 
 
+$conn = connect();
 
-header('Location: index.php');
+$sql = "SELECT idInputPelayanan FROM inputPelayanan ORDER BY idInputPelayanan DESC LIMIT 1";
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_assoc($result);
+
+
+$komenArray = array(
+    1 => "Kok saya diminta uang tambahan ya?",
+    2 => "Petugasnya lambat",
+    3 => "Biasa aja",
+    4 => "OK",
+    5 => "Wah bagus");
+$newidPel = $row['idInputPelayanan'];
+$newRating = rand(1,5);
+
+$result = mysqli_query($conn, "INSERT INTO komentar (idInputPelayanan, komentar, rating, tanggal)
+  VALUES ('$newidPel', '$komenArray[$newRating]', '$newRating', '$tanggal');");
+
+mysqli_close($conn);
+
+header('Location: data.php');
 quit();

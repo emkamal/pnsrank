@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-<?php include("mysql_conn.php");
+<?php
 $idPNS = $_SESSION['loggedInPNS'];
 ?>
 
@@ -61,13 +61,13 @@ $idPNS = $_SESSION['loggedInPNS'];
                                                 <li><span data-number="all"> Lihat semua</span></li>
                                             </ul>
                                         </div>
-                                        <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" data-datetime-format="{month}/{day}/{year}" class="jplist-drop-down form-control">
+                                        <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" data-datetime-format="{year}-{month}-{day}" class="jplist-drop-down form-control">
                                             <ul class="dropdown-menu">
                                                 <li><span data-path="default">Sort by</span></li>
-                                                <li><span data-path=".like" data-order="desc" data-type="number" data-default="true">Skor tinggi</span></li>
+                                                <li><span data-path=".like" data-order="desc" data-type="number">Skor tinggi</span></li>
                                                 <li><span data-path=".like" data-order="asc" data-type="number">Skor Rendah</span></li>
-                                                <li><span data-path=".date" data-order="asc" data-type="datetime">Tanggal baru</span></li>
-                                                <li><span data-path=".date" data-order="desc" data-type="datetime">Tanggal lama</span></li>
+                                                <li><span data-path=".date" data-order="asc" data-type="datetime">Tanggal lama</span></li>
+                                                <li><span data-path=".date" data-order="desc" data-type="datetime"  data-default="true">Tanggal baru</span></li>
                                             </ul>
                                         </div>
 <!--                                        <div class="text-filter-box">-->
@@ -104,13 +104,13 @@ $idPNS = $_SESSION['loggedInPNS'];
                                                 <li><span data-number="all"> Lihat semua</span></li>
                                             </ul>
                                         </div>
-                                        <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" data-control-animate-to-top="true" data-datetime-format="{month}/{day}/{year}" class="jplist-drop-down form-control">
+                                        <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" data-control-animate-to-top="true" data-datetime-format="{year}-{month}-{day}" class="jplist-drop-down form-control">
                                             <ul class="dropdown-menu">
                                                 <li><span data-path="default">Sort by</span></li>
                                                 <li><span data-path=".like" data-order="desc" data-type="number" data-default="true">Skor tinggi</span></li>
                                                 <li><span data-path=".like" data-order="asc" data-type="number">Skor Rendah</span></li>
-                                                <li><span data-path=".date" data-order="asc" data-type="datetime">Tanggal baru</span></li>
-                                                <li><span data-path=".date" data-order="desc" data-type="datetime">Tanggal lama</span></li>
+                                                <li><span data-path=".date" data-order="asc" data-type="datetime">Tanggal lama</span></li>
+                                                <li><span data-path=".date" data-order="desc" data-type="datetime">Tanggal baru</span></li>
                                             </ul>
                                         </div>
                                         <div data-type="{start} - {end} of {all}" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging" class="jplist-label btn btn-default"></div>

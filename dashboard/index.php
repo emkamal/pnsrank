@@ -1,9 +1,4 @@
 <?php include("header.php"); ?>
-<?php
-    include("mysql_conn.php");
-    $result = getPNSData($_SESSION['loggedInPNS']);
-    $dataPNS = mysqli_fetch_assoc($result);
-?>
 
         <div id="wrapper">
             <!--BEGIN SIDEBAR MENU-->
@@ -90,6 +85,19 @@
                     </div>
                 </div>
                 <!--END TITLE & BREADCRUMB PAGE-->
+                <div>
+                    <?php
+                    $result = getInfoKomentarPNS($dataPNS["idPNS"]);
+                    $row = mysqli_fetch_assoc($result);
+
+                    $jumlahpelayanan = round($row["jumlah"],2);
+                    $skorpersonal = round($row["avgrating"],2);
+
+                    $result = getInfoKomentarKantor($dataPNS["idKantor"]);
+                    $row = mysqli_fetch_assoc($result);
+                    $skorkantor = round($row["avgrating"],2);
+                    ?>
+                    </div>
                 <!--BEGIN CONTENT-->
                 <div class="page-content">
                     <div id="tab-general">
@@ -100,11 +108,13 @@
                                         <p class="icon">
                                             <i class="icon fa fa-user"></i>
                                         </p>
+
                                         <h4 class="value">
-                                            <span data-counter="" data-start="10" data-end="50" data-step="1" data-duration="0">
-                                            </span><span>/100</span></h4>
+
+                                            <span><?php echo $skorpersonal; ?>
+                                            </span><span>/5</span></h4>
                                         <p class="description">
-                                            Skor Pelayanan</p>
+                                            Rata-rata Skor Pelayanan</p>
                                         <div class="progress progress-sm mbn">
                                             <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                                 style="width: 80%;" class="progress-bar progress-bar-success">
@@ -120,9 +130,9 @@
                                             <i class="icon fa fa-align-justify"></i>
                                         </p>
                                         <h4 class="value">
-                                            <span>215</span><span>/100</span></h4>
+                                            <span><?php echo $skorkantor; ?></span><span>/5</span></h4>
                                         <p class="description">
-                                            Skor pelayanan rata2</p>
+                                            Rata-rata Skor Pelayanan di kantor</p>
                                         <div class="progress progress-sm mbn">
                                             <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                                 style="width: 60%;" class="progress-bar progress-bar-info">
@@ -138,7 +148,7 @@
                                             <i class="icon fa fa-signal"></i>
                                         </p>
                                         <h4 class="value">
-                                            <span>215</span></h4>
+                                            <span><?php echo $jumlahpelayanan; ?></span></h4>
                                         <p class="description">
                                             Jumlah pelayanan</p>
                                         <div class="progress progress-sm mbn">
