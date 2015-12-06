@@ -1,6 +1,6 @@
 <?php include("header.php"); ?>
 <?php include("mysql_conn.php");
-$idPNS = 1;
+$idPNS = $_SESSION['loggedInPNS'];
 ?>
 
         <div id="wrapper">
@@ -55,31 +55,27 @@ $idPNS = 1;
                                         <button type="button" data-control-type="reset" data-control-name="reset" data-control-action="reset" class="jplist-reset-btn btn btn-default">Reset<i class="fa fa-share mls"></i></button>
                                         <div data-control-type="drop-down" data-control-name="paging" data-control-action="paging" class="jplist-drop-down form-control">
                                             <ul class="dropdown-menu">
-                                                <li><span data-number="3"> 3 per page</span></li>
-                                                <li><span data-number="5"> 5 per page</span></li>
-                                                <li><span data-number="10" data-default="true"> 10 per page</span></li>
-                                                <li><span data-number="all"> view all</span></li>
+                                                <li><span data-number="3"> 3 per halaman</span></li>
+                                                <li><span data-number="5" data-default="true"> 5 per halaman</span></li>
+                                                <li><span data-number="10"> 10 per halaman</span></li>
+                                                <li><span data-number="all"> Lihat semua</span></li>
                                             </ul>
                                         </div>
                                         <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" data-datetime-format="{month}/{day}/{year}" class="jplist-drop-down form-control">
                                             <ul class="dropdown-menu">
                                                 <li><span data-path="default">Sort by</span></li>
-                                                <li><span data-path=".title" data-order="asc" data-type="text">Title A-Z</span></li>
-                                                <li><span data-path=".title" data-order="desc" data-type="text">Title Z-A</span></li>
-                                                <li><span data-path=".desc" data-order="asc" data-type="text">Description A-Z</span></li>
-                                                <li><span data-path=".desc" data-order="desc" data-type="text">Description Z-A</span></li>
-                                                <li><span data-path=".like" data-order="asc" data-type="number" data-default="true">Skor asc</span></li>
-                                                <li><span data-path=".like" data-order="desc" data-type="number">Skor desc</span></li>
-                                                <li><span data-path=".date" data-order="asc" data-type="datetime">Date asc</span></li>
-                                                <li><span data-path=".date" data-order="desc" data-type="datetime">Date desc</span></li>
+                                                <li><span data-path=".like" data-order="desc" data-type="number" data-default="true">Skor tinggi</span></li>
+                                                <li><span data-path=".like" data-order="asc" data-type="number">Skor Rendah</span></li>
+                                                <li><span data-path=".date" data-order="asc" data-type="datetime">Tanggal baru</span></li>
+                                                <li><span data-path=".date" data-order="desc" data-type="datetime">Tanggal lama</span></li>
                                             </ul>
                                         </div>
-                                        <div class="text-filter-box">
-                                            <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input data-path=".title" type="text" value="" placeholder="Filter by Title" data-control-type="textbox" data-control-name="title-filter" data-control-action="filter" class="form-control"/></div>
-                                        </div>
-                                        <div class="text-filter-box">
-                                            <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input data-path=".desc" type="text" value="" placeholder="Filter by Description" data-control-type="textbox" data-control-name="desc-filter" data-control-action="filter" class="form-control"/></div>
-                                        </div>
+<!--                                        <div class="text-filter-box">-->
+<!--                                            <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input data-path=".title" type="text" value="" placeholder="Filter by Title" data-control-type="textbox" data-control-name="title-filter" data-control-action="filter" class="form-control"/></div>-->
+<!--                                        </div>-->
+<!--                                        <div class="text-filter-box">-->
+<!--                                            <div class="input-group"><span class="input-group-addon"><i class="fa fa-search"></i></span><input data-path=".desc" type="text" value="" placeholder="Filter by Description" data-control-type="textbox" data-control-name="desc-filter" data-control-action="filter" class="form-control"/></div>-->
+<!--                                        </div>-->
                                         <div data-type="Page {current} of {pages}" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging" class="jplist-label btn btn-default"></div>
                                         <div data-control-type="pagination" data-control-name="paging" data-control-action="paging" class="jplist-pagination"></div>
                                     </div>
@@ -102,23 +98,19 @@ $idPNS = 1;
                                     <div class="jplist-panel box panel-bottom">
                                         <div data-control-type="drop-down" data-control-name="paging" data-control-action="paging" data-control-animate-to-top="true" class="jplist-drop-down form-control">
                                             <ul class="dropdown-menu">
-                                                <li><span data-number="3"> 3 per page</span></li>
-                                                <li><span data-number="5"> 5 per page</span></li>
-                                                <li><span data-number="10" data-default="true"> 10 per page</span></li>
-                                                <li><span data-number="all"> view all</span></li>
+                                                <li><span data-number="3"> 3 per halaman</span></li>
+                                                <li><span data-number="5" data-default="true"> 5 per halaman</span></li>
+                                                <li><span data-number="10"> 10 per halaman</span></li>
+                                                <li><span data-number="all"> Lihat semua</span></li>
                                             </ul>
                                         </div>
                                         <div data-control-type="drop-down" data-control-name="sort" data-control-action="sort" data-control-animate-to-top="true" data-datetime-format="{month}/{day}/{year}" class="jplist-drop-down form-control">
                                             <ul class="dropdown-menu">
                                                 <li><span data-path="default">Sort by</span></li>
-                                                <li><span data-path=".title" data-order="asc" data-type="text">Title A-Z</span></li>
-                                                <li><span data-path=".title" data-order="desc" data-type="text">Title Z-A</span></li>
-                                                <li><span data-path=".desc" data-order="asc" data-type="text">Description A-Z</span></li>
-                                                <li><span data-path=".desc" data-order="desc" data-type="text">Description Z-A</span></li>
-                                                <li><span data-path=".like" data-order="asc" data-type="number" data-default="true">Likes asc</span></li>
-                                                <li><span data-path=".like" data-order="desc" data-type="number">Likes desc</span></li>
-                                                <li><span data-path=".date" data-order="asc" data-type="datetime">Date asc</span></li>
-                                                <li><span data-path=".date" data-order="desc" data-type="datetime">Date desc</span></li>
+                                                <li><span data-path=".like" data-order="desc" data-type="number" data-default="true">Skor tinggi</span></li>
+                                                <li><span data-path=".like" data-order="asc" data-type="number">Skor Rendah</span></li>
+                                                <li><span data-path=".date" data-order="asc" data-type="datetime">Tanggal baru</span></li>
+                                                <li><span data-path=".date" data-order="desc" data-type="datetime">Tanggal lama</span></li>
                                             </ul>
                                         </div>
                                         <div data-type="{start} - {end} of {all}" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging" class="jplist-label btn btn-default"></div>

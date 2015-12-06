@@ -2,8 +2,7 @@
 include("../globalconfig.php");
 
 session_destroy();
-header("Location:".$root_url);
-
-
+header("Location: login.php?text='Please log in first'");
+die();
 
 ?>

@@ -34,9 +34,12 @@ $result = mysqli_query($conn, "INSERT INTO inputPelayanan (idPelayanan, idPNS, t
   VALUES ('$idPelayanan', '$idPNS', '$tanggal', '$inputInfo', '$name', '$phone', '$email');");
 if ($result) {
     $message="successfully sent the query!!";
+    echo 'alert("Data tersimpan di pusat, warga akan menerima SMS / Email untuk memberi rating")';
 }
 
 mysqli_close($conn);
+
+
 
 header('Location: index.php');
 quit();
