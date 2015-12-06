@@ -56,6 +56,18 @@ function getFeedbackBasedOnIdPNS($idPNS)
     return $result;
 }
 
+function getDataLayanan($idPNS)
+{
+	$conn = connect();
+
+    $sql = "SELECT * FROM inputPelayanan WHERE idPNS = $idPNS";
+    $result = mysqli_query($conn, $sql);
+
+    mysqli_close($conn);
+
+    return $result;
+}
+
 function getAllPNS(){
 	$conn = connect();
 

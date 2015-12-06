@@ -1,4 +1,4 @@
-<?php include("header.php"); ?>
+<?php include("header.php"); include("mysql_conn.php"); ?>
         <div id="wrapper">
             <!--BEGIN SIDEBAR MENU-->
             <nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;"
@@ -39,61 +39,42 @@
 								<div class="panel panel-blue" style="background:#FFF;">
                             <div class="panel-heading">Data layanan</div>
                             <div class="panel-body">
+							<?php 
+								$dataLayanan = getDataLayanan($_SESSION['loggedInPNS']);
+								$listPelayananRaw = getListPelayanan();
+								$listPelayanan[] = "";
+								while($row = mysqli_fetch_assoc($listPelayananRaw)) {
+									$listPelayanan[$row["idTypePelayanan"]] = $row["jenisPelayanan"];
+									//echo "<option value=".$row["idTypePelayanan"].">".$row["jenisPelayanan"]."</option><br>";
+								}
+								
+							?>
                                 <table class="table table-hover table-bordered">
                                     <thead>
                                     <tr>
                                         <th>ID</th>
+                                        <th>Tanggal</th>
                                         <th>No KTP terlayan</th>
                                         <th>Nama Terlayan</th>
+                                        <th>No HP Terlayan</th>
                                         <th>Tipe Layanan</th>
-                                        <th>Tanggal</th>
-                                        <th>Status</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>326587326572</td>
-                                        <td>Henry</td>
-                                        <td>Urus KTP</td>
-                                        <td>23</td>
-                                        <td><span class="label label-sm label-success">Approved</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>2435493780375832</td>
-                                        <td>John</td>
-                                        <td>Urus NPWP</td>
-                                        <td>45</td>
-                                        <td><span class="label label-sm label-info">Pending</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>37435693475834785734</td>
-                                        <td>Larry</td>
-                                        <td>Urus IMB</td>
-                                        <td>30</td>
-                                        <td><span class="label label-sm label-warning">Suspended</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>447545436436</td>
-                                        <td>Lahm</td>
-                                        <td>Urus surat nikah</td>
-                                        <td>15</td>
-                                        <td><span class="label label-sm label-danger">Blocked</span></td>
-                                    </tr>
+									<?php
+										while($row = mysqli_fetch_assoc($dataLayanan)) {
+									?>
+											<tr>
+												<td><?php echo $row["idInputPelayanan"]; ?></td>
+												<td><?php echo $row["tanggal"]; ?></td>
+												<td><?php echo $row["ktpWarga"]; ?></td>
+												<td><?php echo $row["NamaWarga"]; ?></td>
+												<td><?php echo $row["NoTelpWarga"]; ?></td>
+												<td><?php echo $listPelayanan[$row["idPelayanan"]]; ?></td>
+											</tr>
+									<?php } ?>
+                                    
                                     </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <th></th>
-                                        <th><i>4 People</i></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th></th>
-                                        <th><i>1 Approved</i></th>
-                                    </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                         </div>
