@@ -8,7 +8,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     <!--<a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>-->
-                    <a class="navbar-brand" href="index.php"><h1>MataLayan</h1></a>
+                    <a class="navbar-brand" href="index.php"><img src="images/logo-matalayan.png" /></a>
                 </div>
 				
                 <div class="collapse navbar-collapse navbar-right">
