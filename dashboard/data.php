@@ -46,7 +46,7 @@
                                         <th>No KTP terlayan</th>
                                         <th>Nama Terlayan</th>
                                         <th>Tipe Layanan</th>
-                                        <th>Skor Layananan</th>
+                                        <th>Tanggal</th>
                                         <th>Status</th>
                                     </tr>
                                     </thead>

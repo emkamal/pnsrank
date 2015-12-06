@@ -92,13 +92,13 @@
                                 <div class="panel profit db mbm">
                                     <div class="panel-body">
                                         <p class="icon">
-                                            <i class="icon fa fa-shopping-cart"></i>
+                                            <i class="icon fa fa-user"></i>
                                         </p>
                                         <h4 class="value">
                                             <span data-counter="" data-start="10" data-end="50" data-step="1" data-duration="0">
-                                            </span><span>$</span></h4>
+                                            </span><span>/100</span></h4>
                                         <p class="description">
-                                            Profit description</p>
+                                            Skor Pelayanan</p>
                                         <div class="progress progress-sm mbn">
                                             <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
                                                 style="width: 80%;" class="progress-bar progress-bar-success">
@@ -111,12 +111,12 @@
                                 <div class="panel income db mbm">
                                     <div class="panel-body">
                                         <p class="icon">
-                                            <i class="icon fa fa-money"></i>
+                                            <i class="icon fa fa-align-justify"></i>
                                         </p>
                                         <h4 class="value">
-                                            <span>215</span><span>$</span></h4>
+                                            <span>215</span><span>/100</span></h4>
                                         <p class="description">
-                                            Income detail</p>
+                                            Skor pelayanan rata2</p>
                                         <div class="progress progress-sm mbn">
                                             <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
                                                 style="width: 60%;" class="progress-bar progress-bar-info">
@@ -134,7 +134,7 @@
                                         <h4 class="value">
                                             <span>215</span></h4>
                                         <p class="description">
-                                            Task completed</p>
+                                            Jumlah pelayanan</p>
                                         <div class="progress progress-sm mbn">
                                             <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
                                                 style="width: 50%;" class="progress-bar progress-bar-danger">
@@ -152,7 +152,7 @@
                                         <h4 class="value">
                                             <span>128</span></h4>
                                         <p class="description">
-                                            Visitor description</p>
+                                            Random number</p>
                                         <div class="progress progress-sm mbn">
                                             <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
                                                 style="width: 70%;" class="progress-bar progress-bar-warning">
@@ -162,128 +162,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="row mbl">
-                            <div class="col-lg-8">
-                                <div class="panel">
-                                    <div class="panel-body">
-                                        <div class="row">
-                                            <div class="col-md-8">
-                                                <h4 class="mbs">
-                                                    Network Performance</h4>
-                                                <p class="help-block">
-                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
-                                                <div id="area-chart-spline" style="width: 100%; height: 300px">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <h4 class="mbm">
-                                                    Server Status</h4>
-                                                <span class="task-item">CPU Usage (25 - 32 cpus)<small class="pull-right text-muted">40%</small><div
-                                                    class="progress progress-sm">
-                                                    <div role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 40%;" class="progress-bar progress-bar-orange">
-                                                        <span class="sr-only">40% Complete (success)</span></div>
-                                                </div>
-                                                </span><span>Memory Usage (2.5GB)<small class="pull-right text-muted">60%</small><div
-                                                    class="progress progress-sm">
-                                                    <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 60%;" class="progress-bar progress-bar-blue">
-                                                        <span class="sr-only">60% Complete (success)</span></div>
-                                                </div>
-                                                </span><span>Disk Usage (C:\ 120GB , D:\ 430GB)<small class="pull-right text-muted">55%</small><div
-                                                    class="progress progress-sm">
-                                                    <div role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 55%;" class="progress-bar progress-bar-green">
-                                                        <span class="sr-only">55% Complete (success)</span></div>
-                                                </div>
-                                                </span><span>Domain (2/5)<small class="pull-right text-muted">66%</small><div class="progress progress-sm">
-                                                    <div role="progressbar" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 66%;" class="progress-bar progress-bar-yellow">
-                                                        <span class="sr-only">66% Complete (success)</span></div>
-                                                </div>
-                                                </span><span>Database (90/100)<small class="pull-right text-muted">90%</small><div
-                                                    class="progress progress-sm">
-                                                    <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 90%;" class="progress-bar progress-bar-pink">
-                                                        <span class="sr-only">90% Complete (success)</span></div>
-                                                </div>
-                                                </span><span>Email Account (25/50)<small class="pull-right text-muted">50%</small><div
-                                                    class="progress progress-sm">
-                                                    <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 50%;" class="progress-bar progress-bar-violet">
-                                                        <span class="sr-only">50% Complete (success)</span></div>
-                                                </div>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="portlet box">
-                                    <div class="portlet-header">
-                                        <div class="caption">
-                                            Chats</div>
-                                    </div>
-                                    <div class="portlet-body">
-                                        <div class="chat-scroller">
-                                            <ul class="chats">
-                                                <li class="in">
-                                                    <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                    <div class="message">
-                                                        <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                            class="chat-datetime">at July 06, 2014 17:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                                </li>
-                                                <li class="out">
-                                                    <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                    <div class="message">
-                                                        <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                            class="chat-datetime">at July 06, 2014 18:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                                </li>
-                                                <li class="in">
-                                                    <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                    <div class="message">
-                                                        <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                            class="chat-datetime">at July 06, 2014 17:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                                </li>
-                                                <li class="out">
-                                                    <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                    <div class="message">
-                                                        <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                            class="chat-datetime">at July 06, 2014 18:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                                </li>
-                                                <li class="in">
-                                                    <img src="images/avatar/48.jpg" class="avatar img-responsive" />
-                                                    <div class="message">
-                                                        <span class="chat-arrow"></span><a href="#" class="chat-name">Admin</a>&nbsp;<span
-                                                            class="chat-datetime">at July 06, 2014 17:06</span><span class="chat-body">Lorem ipsum
-                                                                dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-                                                                ut laoreet dolore magna aliquam erat volutpat.</span></div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="chat-form">
-                                            <div class="input-group">
-                                                <input id="input-chat" type="text" placeholder="Type a message here..." class="form-control" /><span
-                                                    id="btn-chat" class="input-group-btn">
-                                                    <button type="button" class="btn btn-green">
-                                                        <i class="fa fa-check"></i>
-                                                    </button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+						<!-- this -->
                         <div class="row mbl">
                             <div class="col-lg-4">
                                 <div class="panel">
@@ -294,62 +173,19 @@
                                                     <h2>
                                                         John Doe</h2>
                                                     <p>
-                                                        <strong>About:</strong> Web Designer / UI.</p>
+                                                        <strong>Area Kerja:</strong> Administrasi kependudukan</p>
+                                                        <strong>Wilayah Kerja:</strong> Kecamatan Sumenep</p>
                                                     <p>
-                                                        <strong>Hobbies:</strong> Read, out with friends, listen to music, draw and learn
-                                                        new things.</p>
+                                                        <strong>Motto:</strong> <i>Read, out with friends, listen to music, draw and learn
+                                                        new things.</i></p>
                                                     <p>
-                                                        <strong class="mrs">Skills:</strong><span class="label label-green mrs">html5</span><span
-                                                            class="label label-green mrs">css3</span><span class="label label-green mrs">jquery</span></p>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-4 text-center">
                                                     <figure><img src="images/avatar/128.jpg" alt="" style="display: inline-block" class="img-responsive img-circle"/>
-                                                    <figcaption class="ratings"><p><a href="#"><span class="fa fa-star"></span></a><a href="#"><span class="fa fa-star"></span></a><a href="#"><span class="fa fa-star"></span></a><a href="#"><span class="fa fa-star"></span></a><a href="#"><span class="fa fa-star-o"></span></a></p></figcaption>
-                                                </figure>
+                                                    </figure>
                                                 </div>
                                             </div>
-                                            <div class="row text-center divider">
-                                                <div class="col-xs-12 col-sm-4 emphasis">
-                                                    <h2>
-                                                        <strong>20,7K</strong></h2>
-                                                    <p>
-                                                        <small>Followers</small>
-                                                    </p>
-                                                    <button class="btn btn-yellow btn-block">
-                                                        <span class="fa fa-plus-circle"></span>&nbsp; Follow
-                                                    </button>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-4 emphasis">
-                                                    <h2>
-                                                        <strong>245</strong></h2>
-                                                    <p>
-                                                        <small>Following</small>
-                                                    </p>
-                                                    <button class="btn btn-blue btn-block">
-                                                        <span class="fa fa-user"></span>&nbsp; Profile
-                                                    </button>
-                                                </div>
-                                                <div class="col-xs-12 col-sm-4 emphasis">
-                                                    <h2>
-                                                        <strong>43</strong></h2>
-                                                    <p>
-                                                        <small>Snippets</small>
-                                                    </p>
-                                                    <div class="btn-group dropup">
-                                                        <button type="button" data-toggle="dropdown" class="btn btn-orange dropdown-toggle">
-                                                            <span class="fa fa-gear"></span>&nbsp; Options
-                                                        </button>
-                                                        <ul role="menu" class="dropdown-menu pull-right text-left">
-                                                            <li><a href="#"><span class="fa fa-envelope"></span>&nbsp; Send an email</a></li>
-                                                            <li><a href="#"><span class="fa fa-list"></span>&nbsp; Add or remove from a list</a></li>
-                                                            <li class="divider"></li>
-                                                            <li><a href="#"><span class="fa fa-warning"></span>&nbsp; Report this user for spam</a></li>
-                                                            <li class="divider"></li>
-                                                            <li><a href="#" role="button" class="btn disabled">Unfollow</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -358,159 +194,154 @@
                                 <div class="portlet box">
                                     <div class="portlet-header">
                                         <div class="caption">
-                                            Todo List</div>
+                                            Feedback warga</div>
                                     </div>
-                                    <div style="overflow: hidden;" class="portlet-body">
-                                        <ul class="todo-list sortable">
-                                            <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                                <div class="todo-check pull-left">
-                                                    <input type="checkbox" value="" /></div>
-                                                <div class="todo-title">
-                                                    Sed ut perspiciatis unde omnis iste</div>
-                                                <div class="todo-actions pull-right clearfix">
-                                                    <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                        <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                                        </i></a>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                                <div class="todo-check pull-left">
-                                                    <input type="checkbox" value="" /></div>
-                                                <div class="todo-title">
-                                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium</div>
-                                                <div class="todo-actions pull-right clearfix">
-                                                    <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                        <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                                        </i></a>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                                <div class="todo-check pull-left">
-                                                    <input type="checkbox" value="" /></div>
-                                                <div class="todo-title">
-                                                    Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
-                                                    minus id</div>
-                                                <div class="todo-actions pull-right clearfix">
-                                                    <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                        <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                                        </i></a>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                                <div class="todo-check pull-left">
-                                                    <input type="checkbox" value="" /></div>
-                                                <div class="todo-title">
-                                                    Et harum quidem rerum facilis est</div>
-                                                <div class="todo-actions pull-right clearfix">
-                                                    <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                        <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                                        </i></a>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                                <div class="todo-check pull-left">
-                                                    <input type="checkbox" value="" /></div>
-                                                <div class="todo-title">
-                                                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet</div>
-                                                <div class="todo-actions pull-right clearfix">
-                                                    <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                        <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                                        </i></a>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix"><span class="drag-drop"><i></i></span>
-                                                <div class="todo-check pull-left">
-                                                    <input type="checkbox" value="" /></div>
-                                                <div class="todo-title">
-                                                    Excepteur sint occaecat cupidatat non proident</div>
-                                                <div class="todo-actions pull-right clearfix">
-                                                    <a href="#" class="todo-complete"><i class="fa fa-check"></i></a><a href="#" class="todo-edit">
-                                                        <i class="fa fa-edit"></i></a><a href="#" class="todo-remove"><i class="fa fa-trash-o">
-                                                        </i></a>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                    <div style="overflow: scroll; max-height: 300px" class="portlet-body">
+										<table class="demo-tbl"><!--<item>1</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/arch-1.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">03/15/2012</p>
+
+                                                    <p class="desc">An arch is a structure that spans a space and supports a load. Arches appeared as early as the 2nd millennium BC in Mesopotamian brick architecture and their systematic use started with the Ancient Romans who were the first to apply the technique to a wide range of structures.</p>
+
+                                                    <span class="like title">Skor pelayanan: 5</span></td>
+                                            </tr>
+                                            <!--<item>2</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/arch-2.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">03/18/2012</p>
+
+                                                    <p class="desc">Architecture is both the process and product of planning, designing and construction. Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art. Historical civilizations are often identified with their surviving architectural achievements.</p>
+
+                                                    <p class="like title">Skor pelayanan: 4</p></td>
+                                            </tr>
+                                            <!--<item>3</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/autumn-1.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">01/16/2011</p>
+
+                                                    <p class="desc">Autumn or Fall is one of the four temperate seasons. Autumn marks the transition from summer into winter, in September (Northern Hemisphere) or March (Southern Hemisphere) when the arrival of night becomes noticeably earlier. The equinoxes might be expected to be in the middle of their respective seasons, but temperature lag
+                                                        (caused by the thermal latency of the ground and sea) means that seasons appear later than dates calculated from a purely astronomical perspective.</p>
+
+                                                    <p class="like title">Skor pelayanan: 4</p></td>
+                                            </tr>
+                                            <!--<item>4</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/boats-1.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">02/24/2000</p>
+
+                                                    <p class="desc">A boat is a watercraft of any size designed to float or plane, to provide passage across water. Usually this water will be inland (lakes) or in protected coastal areas. However, boats such as the whaleboat were designed to be operated from a ship in an offshore environment. In naval terms, a boat is a vessel small enough to be
+                                                        carried aboard another vessel (a ship).</p>
+
+                                                    <p class="like title">Skor pelayanan: 1</p></td>
+                                            </tr>
+                                            <!--<item>5</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/book-1.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">11/22/2001</p>
+
+                                                    <p class="desc">A book is a set of written, printed, illustrated, or blank sheets, made of ink, paper, parchment, or other materials, usually fastened together to hinge at one side. A single sheet within a book is called a leaf, and each side of a leaf is called a page. A book produced in electronic format is known as an electronic book
+                                                        (e-book).</p>
+
+                                                    <p class="like title">Skor pelayanan:  3</p></td>
+                                            </tr>
+                                            <!--<item>6</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/business-1.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">02/05/2004</p>
+
+                                                    <p class="desc">A business (also known as enterprise or firm) is an organization engaged in the trade of goods, services, or both to consumers. Businesses are predominant in capitalist economies, where most of them are privately owned and administered to earn profit to increase the wealth of their owners. Businesses may also be not-for-profit or
+                                                        state-owned. A business owned by multiple individuals may be referred to as a company, although that term also has a more precise meaning.</p>
+
+                                                    <p class="like title">Skor pelayanan: 2</p></td>
+                                            </tr>
+                                            <!--<item>7</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/calendar-1.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">05/08/2003</p>
+
+                                                    <p class="desc">A calendar is a system of organizing days for social, religious, commercial, or administrative purposes. This is done by giving names to periods of time, typically days, weeks, months, and years. The name given to each day is known as a date. Periods in a calendar (such as years and months) are usually, though not necessarily,
+                                                        synchronized with the cycle of the sun or the moon.</p>
+
+                                                    <p class="like title">Skor pelayanan: 1</p></td>
+                                            </tr>
+                                            <!--<item>8</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/car-1.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">09/01/2007</p>
+
+                                                    <p class="desc">An automobile, autocar, motor car or car is a wheeled motor vehicle used for transporting passengers, which also carries its own engine or motor. Most definitions of the term specify that automobiles are designed to run primarily on roads, to have seating for one to eight people, to typically have four wheels, and to be
+                                                        constructed principally for the transport of people rather than goods.</p>
+
+                                                    <p class="like title">Skor pelayanan: 2</p></td>
+                                            </tr>
+                                            <!--<item>9</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/christmas-1.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">11/12/1998</p>
+
+                                                    <p class="desc">Christmas or Christmas Day is an annual commemoration of the birth of Jesus Christ, celebrated generally on December as a religious and cultural holiday by billions of people around the world. A feast central to the Christian liturgical year, it closes the Advent season and initiates the twelve days of Christmastide. Christmas is
+                                                        a civil holiday in many of the world's nations, is celebrated by an increasing number of non-Christians, and is an integral part of the Christmas and holiday season.</p>
+
+                                                    <p class="like title">Skor pelayanan: 2</p></td>
+                                            </tr>
+                                            <!--<item>10</item>-->
+                                            <tr class="tbl-item"><!--<img/>-->
+                                                <!--<td class="img"><img src="images/thumbs/christmas-2.jpg" alt="" title=""/></td>
+                                                <!--<data></data>-->
+                                                <td class="td-block"><p class="date">06/10/1995</p>
+
+                                                    <p class="desc">The Christmas Toy is a 1986 made-for-TV movie by The Jim Henson Company. It originally aired on ABC on December 6, 1986, and was originally sponsored by Kraft Foods. Originally introduced by Kermit The Frog, it was released on VHS format in 1993. In 2008, HIT Entertainment (distributed by Lionsgate) released the special on DVD,
+                                                        but edited out Kermit's appearance due to legal issues.</p>
+
+                                                    <p class="like title">Skor pelayanan: 3</p></td>
+                                            </tr>
+                                        </table>
+										<a class="morefeedback" href="feedback.php">lihat lebih lengkap</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row mbl">
                             <div class="col-lg-8">
-                                <div class="timeline-centered timeline-sm">
-                                    <article class="timeline-entry">
-                                    <div class="timeline-entry-inner">
-                                        <time datetime="2014-01-10T03:45" class="timeline-time"><span>12:45 AM</span><span>Today</span></time>
-                                        <div class="timeline-icon bg-violet"><i class="fa fa-exclamation"></i></div>
-                                        <div class="timeline-label"><h4 class="timeline-title">New Project</h4>
-
-                                            <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial.</p></div>
-                                    </div>
-                                </article>
-                                    <article class="timeline-entry left-aligned">
-                                    <div class="timeline-entry-inner">
-                                        <time datetime="2014-01-10T03:45" class="timeline-time"><span>9:15 AM</span><span>Today</span></time>
-                                        <div class="timeline-icon bg-green"><i class="fa fa-group"></i></div>
-                                        <div class="timeline-label bg-green"><h4 class="timeline-title">Job Meeting</h4>
-
-                                            <p>Caulie dandelion maize lentil collard greens radish arugula sweet pepper water spinach kombu courgette.</p></div>
-                                    </div>
-                                </article>
-                                    <article class="timeline-entry">
-                                    <div class="timeline-entry-inner">
-                                        <time datetime="2014-01-09T13:22" class="timeline-time"><span>8:20 PM</span><span>04/03/2013</span></time>
-                                        <div class="timeline-icon bg-orange"><i class="fa fa-paper-plane"></i></div>
-                                        <div class="timeline-label bg-orange"><h4 class="timeline-title">Daily Feeds</h4>
-
-                                            <p><img src="http://lorempixel.com/45/45/nature/3/" alt="" class="timeline-img pull-left"/>Parsley amaranth tigernut silver beet maize fennel spinach ricebean black-eyed. Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial.</p></div>
-                                    </div>
-                                    <div class="timeline-entry-inner">
-                                        <div style="-webkit-transform: rotate(-90deg); -moz-transform: rotate(-90deg);" class="timeline-icon"><i class="fa fa-plus"></i></div>
-                                    </div>
-                                </article>
-                                </div>
-                            </div>
-                            <!--<div class="col-lg-4">
-                            <div id="my-calendar"></div>
-                        </div>-->
-                            <div class="col-lg-4">
-                                <div class="page-content">
-                                    <div class="row">
-                                        <div class="col-lg-12">
-                                            <div class="portlet box">
-                                                <div class="portlet-header">
-                                                    <div class="caption">
-                                                        Pie with gradient fill</div>
-                                                    <div class="tools">
-                                                        <i class="fa fa-chevron-up"></i><i data-toggle="modal" data-target="#modal-config"
-                                                            class="fa fa-cog"></i><i class="fa fa-refresh"></i><i class="fa fa-times"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="portlet-body">
-                                                    <div id="pie-with-gradient-fill">
-                                                    </div>
+                                <div class="panel">
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="mbs">
+                                                    Performa Skor</h4>
+                                                <p class="help-block">
+                                                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+                                                <div id="area-chart-spline" style="width: 100%; height: 300px">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
+                            <div class="col-lg-4">
                                 <div class="portlet box">
                                     <div class="portlet-header">
                                         <div class="caption">
-                                            Scatter plot</div>
-                                        <div class="tools">
-                                            <i class="fa fa-chevron-up"></i><i data-toggle="modal" data-target="#modal-config"
-                                                class="fa fa-cog"></i><i class="fa fa-refresh"></i><i class="fa fa-times"></i>
-                                        </div>
+                                            Komparasi feedback</div>
                                     </div>
                                     <div class="portlet-body">
-                                        <div id="angular-gauge">
-                                        </div>
+                                        <div id="pie-with-gradient-fill">
+                                                    </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+						
                     </div>
                 </div>
                 <!--END CONTENT-->

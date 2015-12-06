@@ -17,15 +17,15 @@ $(function () {
     //END TO-DO-LIST
 
     //BEGIN AREA CHART SPLINE
-    var d6_1 = [["Jan", 67],["Feb", 91],["Mar", 36],["Apr", 150],["May", 28],["Jun", 123],["Jul", 38]];
-    var d6_2 = [["Jan", 59],["Feb", 49],["Mar", 45],["Apr", 94],["May", 76],["Jun", 22],["Jul", 31]];
+    var d6_1 = [["Jan", 55],["Feb", 58],["Mar", 68],["Apr", 85],["May", 82],["Jun", 88],["Jul", 88]];
+    var d6_2 = [["Jan", 59],["Feb", 59],["Mar", 62],["Apr", 75],["May", 76],["Jun", 90],["Jul", 80]];
     $.plot("#area-chart-spline", [{
         data: d6_1,
-        label: "Upload",
+        label: "Skor Anda",
         color: "#ffce54"
     },{
         data: d6_2,
-        label: "Download",
+        label: "Skor Rata2",
         color: "#01b6ad"
     }], {
         series: {
@@ -160,10 +160,10 @@ $(function () {
     //END CHAT FORM
 
     //BEGIN COUNTER FOR SUMMARY BOX
-    counterNum($(".profit h4 span:first-child"), 189, 112, 1, 30);
-    counterNum($(".income h4 span:first-child"), 636, 812, 1, 50);
-    counterNum($(".task h4 span:first-child"), 103, 155 , 1, 100);
-    counterNum($(".visit h4 span:first-child"), 310, 376, 1, 500);
+    counterNum($(".profit h4 span:first-child"), 0, 78, 1, 5);
+    counterNum($(".income h4 span:first-child"), 0, 54, 1, 10);
+    counterNum($(".task h4 span:first-child"), 0, 300, 3, 15);
+    counterNum($(".visit h4 span:first-child"), 0, 376, 3, 20);
     function counterNum(obj, start, end, step, duration) {
         $(obj).html(start);
         setInterval(function(){

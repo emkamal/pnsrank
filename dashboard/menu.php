@@ -19,12 +19,12 @@
                     </i><span class="menu-title">Feedback</span></a>
                       
                     </li>
+					<!--
                     <li><a href="stat.php"><i class="fa fa-bar-chart-o fa-fw">
                         <div class="icon-bg bg-blue"></div>
                     </i><span class="menu-title">Statistik</span></a>
                           
                     </li>
-					<!--
                     <li><a href="DataGrid.html"><i class="fa fa-database fa-fw">
                         <div class="icon-bg bg-red"></div>
                     </i><span class="menu-title">Data Grids</span></a>
