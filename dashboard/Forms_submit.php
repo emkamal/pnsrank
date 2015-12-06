@@ -18,9 +18,10 @@ function connect()
     return $conn;
 }
 
+
 $conn = connect();
 
-$idPNS = 1;
+$idPNS = mysqli_real_escape_string($conn, $_POST['idPNS']);
 $KTP = mysqli_real_escape_string($conn, $_POST['inputKTP']);
 $name = mysqli_real_escape_string($conn, $_POST['inputName']);
 $email = mysqli_real_escape_string($conn, $_POST['inputEmail']);
@@ -30,8 +31,8 @@ $idPelayanan = mysqli_real_escape_string($conn, $_POST['inputPelayanan']);
 $inputInfo = mysqli_real_escape_string($conn, $_POST['inputInfo']);
 $tanggal = date('Y-m-d H:i:s');
 
-$result = mysqli_query($conn, "INSERT INTO inputPelayanan (idPelayanan, idPNS, tanggal, deskripsi, NamaWarga, NoTelpWarga, EmailWarga)
-  VALUES ('$idPelayanan', '$idPNS', '$tanggal', '$inputInfo', '$name', '$phone', '$email');");
+$result = mysqli_query($conn, "INSERT INTO inputPelayanan (idPelayanan, idPNS, tanggal, deskripsi, NamaWarga, NoTelpWarga, EmailWarga, ktpWarga)
+  VALUES ('$idPelayanan', '$idPNS', '$tanggal', '$inputInfo', '$name', '$phone', '$email', '$KTP');");
 if ($result) {
     $message="successfully sent the query!!";
     echo 'alert("Data tersimpan di pusat, warga akan menerima SMS / Email untuk memberi rating")';
@@ -62,4 +63,4 @@ $result = mysqli_query($conn, "INSERT INTO komentar (idInputPelayanan, komentar,
 mysqli_close($conn);
 
 header('Location: data.php');
-quit();
+die();

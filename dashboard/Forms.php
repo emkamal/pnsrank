@@ -57,6 +57,7 @@ $dataPNS = mysqli_fetch_assoc($result);
                                                             <div class="form-group">
                                                                 <div class="input-icon">
                                                                     <i class="fa fa-user"></i>
+                                                                    <input type="hidden" name="idPNS" value="<?php echo $dataPNS["idPNS"] ?>" />
                                                                     <input id="inputKTP" name="inputKTP" type="text" placeholder="No KTP Terlayan" class="form-control" /></div>
                                                             </div>
                                                         </div>
@@ -80,15 +81,38 @@ $dataPNS = mysqli_fetch_assoc($result);
                                                             <div class="form-group">
                                                                 <div class="input-icon">
                                                                     <i class="fa fa-phone"></i>
-                                                                    <input id="inputPhone" name="inputPhone" type="text" placeholder="Phone" class="form-control" /></div>
+                                                                    <input id="inputPhone" name="inputPhone" type="text" placeholder="No telp." class="form-control" /></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <hr />
-                                                    
                                                     <div class="form-group">
-                                                        <input id="inputAddress" name="inputAddress" type="text" placeholder="Address" class="form-control" /></div>
-                                                    
+                                                        <input id="inputAddress" name="inputAddress" type="text" placeholder="Alamat" class="form-control" /></div>
+                                                    <div class="row">
+<!--                                                        <div class="col-md-4">-->
+<!--                                                            <div class="form-group">-->
+<!--                                                                <select class="form-control">-->
+<!--                                                                    <option>Country</option>-->
+<!--                                                                </select></div>-->
+<!--                                                        </div>-->
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <select id="inputCity" name="inputCity" class="form-control">
+                                                                    <?php
+                                                                    $result = getListKota($dataPNS["idArea"]);
+                                                                    while($row = mysqli_fetch_assoc($result)) {
+                                                                        echo "<option value=".$row["idArea"].">".$row["namaArea"]."</option><br>";
+                                                                    }
+                                                                    ?>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <input id="inputPostCode" name="inputPostCode" type="text" placeholder="Kode pos" class="form-control" /></div>
+                                                        </div>
+                                                    </div>
+
                                                     <hr />
                                                     <div class="form-group">
                                                         Pelayanan yang dilakukan :
@@ -102,7 +126,7 @@ $dataPNS = mysqli_fetch_assoc($result);
                                                         </select>
 													<div class="form-group">
                                                         Deskripsi :
-                                                        <textarea id="inputInfo" name="inputInfo" rows="5" placeholder="Additional info" class="form-control"></textarea></div>
+                                                        <textarea id="inputInfo" name="inputInfo" rows="5" placeholder="Info pelayanan" class="form-control"></textarea></div>
                                                 </div>
                                                 <div class="form-actions text-right pal">
                                                     <button type="submit" class="btn btn-primary">
