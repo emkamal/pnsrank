@@ -145,9 +145,8 @@ include("menu.php"); ?>
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3><a href="profile.php">Dadang Suherman</a> </h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <p>Skor pelayanan: 78</p>
                                 <!--<a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>-->
-                                <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
                             </div> 
                         </div>
                     </div>
@@ -159,7 +158,7 @@ include("menu.php"); ?>
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3><a href="profile.php">Dudung Sugiman</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <p>Skor pelayanan: 65</p>
                                 <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
                             </div> 
                         </div>
@@ -172,7 +171,7 @@ include("menu.php"); ?>
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3><a href="profile.php">Mang Engking</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <p>Skor pelayanan: 87</p>
                                 <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
                             </div> 
                         </div>
@@ -185,7 +184,7 @@ include("menu.php"); ?>
                         <div class="overlay">
                             <div class="recent-work-inner">
                                 <h3><a href="profile.php">Haji Sabeni</a></h3>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                <p>Skor pelayanan: 98</p>
                                 <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
                             </div> 
                         </div>
@@ -264,7 +263,7 @@ include("menu.php"); ?>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Performa Terbaik</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                            <p>Daftar PNS dengan performa terbaik</p>
 							<a href="#">lihat</a>
                         </div>
                     </div>
@@ -277,7 +276,7 @@ include("menu.php"); ?>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Disiplin</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                            <p>Daftar PNS paling disiplin</p>
 							<a href="#">lihat</a>
                         </div>
                     </div>
@@ -290,7 +289,7 @@ include("menu.php"); ?>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Problem Solver</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                            <p>Daftar PNS yang mendapat lencana problem solver</p>
 							<a href="#">lihat</a>
                         </div>
                     </div>
@@ -303,7 +302,7 @@ include("menu.php"); ?>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Ide Brilian</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                            <p>Daftar PNS yang memiliki inisiatif dan ide brilian</p>
 							<a href="#">lihat</a>
                         </div>
                     </div>
@@ -316,7 +315,7 @@ include("menu.php"); ?>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Melek Teknologi</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                            <p>Daftar PNS yang paham penggunaan teknologi</p>
 							<a href="#">lihat</a>
                         </div>
                     </div>
@@ -329,7 +328,7 @@ include("menu.php"); ?>
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Helpful</h3>
-                            <p>Lorem ipsum dolor sit ame consectetur adipisicing elit</p>
+                            <p>Daftar PNS yang banyak membantu warga</p>
 							<a href="#">lihat</a>
                         </div>
                     </div>
