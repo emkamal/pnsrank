@@ -56,5 +56,16 @@ function getFeedbackBasedOnIdPNS($idPNS)
     return $result;
 }
 
+function getAllPNS(){
+	$conn = connect();
+
+    $sql = "SELECT * FROM PNS";
+    $result = mysqli_query($conn, $sql);
+
+    mysqli_close($conn);
+
+    return $result;
+}
+
 ?>
 

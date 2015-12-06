@@ -1,5 +1,5 @@
 <?php
-$root_url = "http://localhost/pnsrank";
+include("globalconfig.php");
 ?>
 
 <!DOCTYPE html>

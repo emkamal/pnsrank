@@ -1,3 +1,29 @@
+<?php
+include("../globalconfig.php");
+include("mysql_conn.php");
+if(isset($_GET['text'])){ $text = $_GET['text']; }
+else{
+	$text = "untuk masuk ke dashboard MataLayan";
+}
+if(isset($_POST['inputName']) && isset($_POST['inputPassword'])){
+	$pnsraw = getAllPNS();
+	//var_dump($pnsraw);
+	while($row = mysqli_fetch_assoc($pnsraw)) {
+		if($_POST['inputName'] == $row["username"] && $_POST['inputPassword'] == $row["password"]){
+			$_SESSION['loggedInPNS'] = $row["idPNS"];
+			//header($root_url."/dashboard/index.php");
+			header("Location:".$root_url."/dashboard/index.php");
+			die();
+		}
+	}
+	
+	//header($root_url."/dashboard/login.php?text='Can not login, wrong username/password'");
+    header("Location:./login.php?text='Can not login, wrong username/password'");
+    exit;
+}
+else{
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +44,7 @@
     <div class="page-form">
         <div class="panel panel-blue">
             <div class="panel-body pan">
-                <form action="#" class="form-horizontal">
+                <form action="login.php" method="post" class="form-horizontal">
                 <div class="form-body pal">
                     <div class="col-md-12 text-center">
                         <h1 style="margin-top: -90px; font-size: 48px;">
@@ -33,8 +59,7 @@
                             <h1>
                                 Harap login</h1>
                             <br />
-                            <p>
-                                untuk masuk ke dashboard MataLayan</p>
+                            <p><?php echo $text; ?></p>
                         </div>
                     </div>
                     <div class="form-group">
@@ -43,7 +68,7 @@
                         <div class="col-md-9">
                             <div class="input-icon right">
                                 <i class="fa fa-user"></i>
-                                <input id="inputName" type="text" placeholder="" class="form-control" /></div>
+                                <input id="inputName" name="inputName" type="text" placeholder="" class="form-control" /></div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -52,7 +77,7 @@
                         <div class="col-md-9">
                             <div class="input-icon right">
                                 <i class="fa fa-lock"></i>
-                                <input id="inputPassword" type="text" placeholder="" class="form-control" /></div>
+                                <input id="inputPassword" name="inputPassword" type="text" placeholder="" class="form-control" /></div>
                         </div>
                     </div>
                     <div class="form-group mbn">
@@ -81,3 +106,4 @@
     </div>
 </body>
 </html>
+<?php } ?>
