@@ -45,10 +45,14 @@ $dataPNS = mysqli_fetch_assoc($result);
                                             <div class="panel-body pan">
                                                 <form action="Forms_submit.php" method="post">
                                                 <div class="form-body pal">
-                                                    <div class="row">
-                                                        Nama Pegawai : <?php echo $dataPNS["NamaPNS"] ?>
+                                                    <div class="row"><div class="col-md-12">
+                                                        Nama Pegawai: <?php echo $dataPNS["NamaPNS"] ?>
                                                     </div>
-                                                    Data diri warga yang dilayani :
+                                                    </div>
+													<div class="row"><div class="col-md-12">
+                                                    <h3>Data diri warga yang dilayani:<h3>
+													</div>
+													</div>
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
