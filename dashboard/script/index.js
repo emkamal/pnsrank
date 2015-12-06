@@ -18,7 +18,7 @@ $(function () {
 
     //BEGIN AREA CHART SPLINE
     var d6_1 = [["Jan", 55],["Feb", 58],["Mar", 68],["Apr", 85],["May", 82],["Jun", 88],["Jul", 88]];
-    var d6_2 = [["Jan", 59],["Feb", 59],["Mar", 62],["Apr", 75],["May", 76],["Jun", 90],["Jul", 80]];
+    var d6_2 = [["Jan", 59],["Feb", 59],["Mar", 62],["Apr", 75],["May", 76],["Jun", 83],["Jul", 80]];
     $.plot("#area-chart-spline", [{
         data: d6_1,
         label: "Skor Anda",

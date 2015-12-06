@@ -79,9 +79,9 @@ $(function () {
             type: 'pie',
             name: 'Komparasi',
             data: [
-                ['Positif',   45],
-                ['Negatif',   30],
-                ['Netral',   25]
+                ['Positif',   70],
+                ['Negatif',   10],
+                ['Netral',   20]
             ]
         }]
     });
