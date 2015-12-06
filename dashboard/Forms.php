@@ -85,30 +85,7 @@ $dataPNS = mysqli_fetch_assoc($result);
                                                         </div>
                                                     </div>
                                                     <hr />
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <select class="form-control">
-                                                                    <option>Country</option>
-                                                                </select></div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <select id="inputCity" name="inputCity" class="form-control">
-                                                                    <?php
-                                                                    $result = getListKota($dataPNS["idArea"]);
-                                                                    while($row = mysqli_fetch_assoc($result)) {
-                                                                        echo "<option value=".$row["idArea"].">".$row["namaArea"]."</option><br>";
-                                                                    }
-                                                                    ?>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <div class="form-group">
-                                                                <input id="inputPostCode" name="inputPostCode" type="text" placeholder="Post code" class="form-control" /></div>
-                                                        </div>
-                                                    </div>
+                                                    
                                                     <div class="form-group">
                                                         <input id="inputAddress" name="inputAddress" type="text" placeholder="Address" class="form-control" /></div>
                                                     
