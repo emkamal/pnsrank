@@ -1,4 +1,10 @@
 <?php include("header.php"); ?>
+<?php
+    include("mysql_conn.php");
+    $result = getPNSData($_SESSION['loggedInPNS']);
+    $dataPNS = mysqli_fetch_assoc($result);
+?>
+
         <div id="wrapper">
             <!--BEGIN SIDEBAR MENU-->
             <nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;"
@@ -48,7 +54,7 @@
                         <ul class="chat-box-body">
                             <li>
                                 <p>
-                                    <img src="images/avatar/128.jpg" class="avt" /><span class="user">John Doe</span><span
+                                    <img src="images/avatar/128.jpg" class="avt" /><span class="user"><?php echo $dataPNS["NamaPNS"] ?></span><span
                                         class="time">09:33</span></p>
                                 <p>
                                     Hi Swlabs, we have some comments for you.</p>
@@ -171,10 +177,10 @@
                                             <div style="margin-bottom: 15px" class="row">
                                                 <div class="col-xs-12 col-sm-8">
                                                     <h2>
-                                                        John Doe</h2>
+                                                        <?php echo $dataPNS["NamaPNS"] ?></h2>
                                                     <p>
-                                                        <strong>Area Kerja:</strong> Administrasi kependudukan</p>
-                                                        <strong>Wilayah Kerja:</strong> Kecamatan Sumenep</p>
+                                                        <strong>Area Kerja:</strong> <?php echo $dataPNS["NamaKantor"] ?></p>
+                                                        <strong>Wilayah Kerja:</strong> <?php echo $dataPNS["NamaArea"] ?></p>
                                                     <p>
                                                         <strong>Motto:</strong> <i>Read, out with friends, listen to music, draw and learn
                                                         new things.</i></p>
@@ -194,117 +200,20 @@
                                 <div class="portlet box">
                                     <div class="portlet-header">
                                         <div class="caption">
-                                            Feedback warga</div>
+                                            Feedback Terbaik</div>
                                     </div>
                                     <div style="overflow: scroll; max-height: 300px" class="portlet-body">
 										<table class="demo-tbl"><!--<item>1</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/arch-1.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">03/15/2012</p>
-
-                                                    <p class="desc">An arch is a structure that spans a space and supports a load. Arches appeared as early as the 2nd millennium BC in Mesopotamian brick architecture and their systematic use started with the Ancient Romans who were the first to apply the technique to a wide range of structures.</p>
-
-                                                    <span class="like title">Skor pelayanan: 5</span></td>
-                                            </tr>
-                                            <!--<item>2</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/arch-2.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">03/18/2012</p>
-
-                                                    <p class="desc">Architecture is both the process and product of planning, designing and construction. Architectural works, in the material form of buildings, are often perceived as cultural symbols and as works of art. Historical civilizations are often identified with their surviving architectural achievements.</p>
-
-                                                    <p class="like title">Skor pelayanan: 4</p></td>
-                                            </tr>
-                                            <!--<item>3</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/autumn-1.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">01/16/2011</p>
-
-                                                    <p class="desc">Autumn or Fall is one of the four temperate seasons. Autumn marks the transition from summer into winter, in September (Northern Hemisphere) or March (Southern Hemisphere) when the arrival of night becomes noticeably earlier. The equinoxes might be expected to be in the middle of their respective seasons, but temperature lag
-                                                        (caused by the thermal latency of the ground and sea) means that seasons appear later than dates calculated from a purely astronomical perspective.</p>
-
-                                                    <p class="like title">Skor pelayanan: 4</p></td>
-                                            </tr>
-                                            <!--<item>4</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/boats-1.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">02/24/2000</p>
-
-                                                    <p class="desc">A boat is a watercraft of any size designed to float or plane, to provide passage across water. Usually this water will be inland (lakes) or in protected coastal areas. However, boats such as the whaleboat were designed to be operated from a ship in an offshore environment. In naval terms, a boat is a vessel small enough to be
-                                                        carried aboard another vessel (a ship).</p>
-
-                                                    <p class="like title">Skor pelayanan: 1</p></td>
-                                            </tr>
-                                            <!--<item>5</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/book-1.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">11/22/2001</p>
-
-                                                    <p class="desc">A book is a set of written, printed, illustrated, or blank sheets, made of ink, paper, parchment, or other materials, usually fastened together to hinge at one side. A single sheet within a book is called a leaf, and each side of a leaf is called a page. A book produced in electronic format is known as an electronic book
-                                                        (e-book).</p>
-
-                                                    <p class="like title">Skor pelayanan:  3</p></td>
-                                            </tr>
-                                            <!--<item>6</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/business-1.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">02/05/2004</p>
-
-                                                    <p class="desc">A business (also known as enterprise or firm) is an organization engaged in the trade of goods, services, or both to consumers. Businesses are predominant in capitalist economies, where most of them are privately owned and administered to earn profit to increase the wealth of their owners. Businesses may also be not-for-profit or
-                                                        state-owned. A business owned by multiple individuals may be referred to as a company, although that term also has a more precise meaning.</p>
-
-                                                    <p class="like title">Skor pelayanan: 2</p></td>
-                                            </tr>
-                                            <!--<item>7</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/calendar-1.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">05/08/2003</p>
-
-                                                    <p class="desc">A calendar is a system of organizing days for social, religious, commercial, or administrative purposes. This is done by giving names to periods of time, typically days, weeks, months, and years. The name given to each day is known as a date. Periods in a calendar (such as years and months) are usually, though not necessarily,
-                                                        synchronized with the cycle of the sun or the moon.</p>
-
-                                                    <p class="like title">Skor pelayanan: 1</p></td>
-                                            </tr>
-                                            <!--<item>8</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/car-1.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">09/01/2007</p>
-
-                                                    <p class="desc">An automobile, autocar, motor car or car is a wheeled motor vehicle used for transporting passengers, which also carries its own engine or motor. Most definitions of the term specify that automobiles are designed to run primarily on roads, to have seating for one to eight people, to typically have four wheels, and to be
-                                                        constructed principally for the transport of people rather than goods.</p>
-
-                                                    <p class="like title">Skor pelayanan: 2</p></td>
-                                            </tr>
-                                            <!--<item>9</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/christmas-1.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">11/12/1998</p>
-
-                                                    <p class="desc">Christmas or Christmas Day is an annual commemoration of the birth of Jesus Christ, celebrated generally on December as a religious and cultural holiday by billions of people around the world. A feast central to the Christian liturgical year, it closes the Advent season and initiates the twelve days of Christmastide. Christmas is
-                                                        a civil holiday in many of the world's nations, is celebrated by an increasing number of non-Christians, and is an integral part of the Christmas and holiday season.</p>
-
-                                                    <p class="like title">Skor pelayanan: 2</p></td>
-                                            </tr>
-                                            <!--<item>10</item>-->
-                                            <tr class="tbl-item"><!--<img/>-->
-                                                <!--<td class="img"><img src="images/thumbs/christmas-2.jpg" alt="" title=""/></td>
-                                                <!--<data></data>-->
-                                                <td class="td-block"><p class="date">06/10/1995</p>
-
-                                                    <p class="desc">The Christmas Toy is a 1986 made-for-TV movie by The Jim Henson Company. It originally aired on ABC on December 6, 1986, and was originally sponsored by Kraft Foods. Originally introduced by Kermit The Frog, it was released on VHS format in 1993. In 2008, HIT Entertainment (distributed by Lionsgate) released the special on DVD,
-                                                        but edited out Kermit's appearance due to legal issues.</p>
-
-                                                    <p class="like title">Skor pelayanan: 3</p></td>
-                                            </tr>
+                                            <?php
+                                            $result = get2highestFeedbackBasedOnIdPNS($_SESSION['loggedInPNS']);
+                                            while($row = mysqli_fetch_assoc($result)) {
+                                                echo "<tr class=\"tbl-item\">";
+                                                echo "<td class=\"td-block\"><p class=\"date\">".$row["Tanggal"]."</p>";
+                                                echo "<p class=\"desc\">".$row["komentar"]."</p>";
+                                                echo "<p class=\"like title\">Skor pelayanan: ".$row["rating"]."</p></td>";
+                                                echo "</tr>";
+                                            }
+                                            ?>
                                         </table>
 										<a class="morefeedback" href="feedback.php">lihat lebih lengkap</a>
                                     </div>

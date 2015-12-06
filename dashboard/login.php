@@ -12,13 +12,13 @@ if(isset($_POST['inputName']) && isset($_POST['inputPassword'])){
 		if($_POST['inputName'] == $row["username"] && $_POST['inputPassword'] == $row["password"]){
 			$_SESSION['loggedInPNS'] = $row["idPNS"];
 			//header($root_url."/dashboard/index.php");
-			header("Location:".$root_url."/dashboard/index.php");
+			header("Location: index.php");
 			die();
 		}
 	}
 	
 	//header($root_url."/dashboard/login.php?text='Can not login, wrong username/password'");
-    header("Location:./login.php?text='Can not login, wrong username/password'");
+    header("Location: login.php?text='Can not login, wrong username/password'");
     exit;
 }
 else{

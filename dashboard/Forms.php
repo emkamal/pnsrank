@@ -1,5 +1,9 @@
 <?php include("header.php"); ?>
-<?php include("mysql_conn.php"); ?>
+<?php
+include("mysql_conn.php");
+$result = getPNSData($_SESSION['loggedInPNS']);
+$dataPNS = mysqli_fetch_assoc($result);
+?>
         <div id="wrapper">
             <!--BEGIN SIDEBAR MENU-->
             <nav id="sidebar" role="navigation" data-step="2" data-intro="Template has &lt;b&gt;many navigation styles&lt;/b&gt;"
@@ -41,6 +45,10 @@
                                             <div class="panel-body pan">
                                                 <form action="Forms_submit.php" method="post">
                                                 <div class="form-body pal">
+                                                    <div class="row">
+                                                        Nama Pegawai : <?php echo $dataPNS["NamaPNS"] ?>
+                                                    </div>
+                                                    Data diri warga yang dilayani :
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
@@ -85,7 +93,7 @@
                                                             <div class="form-group">
                                                                 <select id="inputCity" name="inputCity" class="form-control">
                                                                     <?php
-                                                                    $result = getListKota(2);
+                                                                    $result = getListKota($dataPNS["idArea"]);
                                                                     while($row = mysqli_fetch_assoc($result)) {
                                                                         echo "<option value=".$row["idArea"].">".$row["namaArea"]."</option><br>";
                                                                     }
@@ -103,6 +111,7 @@
                                                     
                                                     <hr />
                                                     <div class="form-group">
+                                                        Pelayanan yang dilakukan :
                                                         <select id="inputPelayanan" name="inputPelayanan" class="form-control">
                                                             <?php
                                                             $result = getListPelayanan();
@@ -112,6 +121,7 @@
                                                             ?>
                                                         </select>
 													<div class="form-group">
+                                                        Deskripsi :
                                                         <textarea id="inputInfo" name="inputInfo" rows="5" placeholder="Additional info" class="form-control"></textarea></div>
                                                 </div>
                                                 <div class="form-actions text-right pal">

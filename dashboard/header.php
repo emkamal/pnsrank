@@ -1,7 +1,7 @@
 <?php include("../globalconfig.php"); 
 
 if(!isset($_SESSION['loggedInPNS'])){
-	header("Location:./login.php?text='Please login in first'");
+	header("Location: login.php?text='Please log in first'");
 	die();
 }
 
