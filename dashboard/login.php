@@ -22,7 +22,7 @@
                 <div class="form-body pal">
                     <div class="col-md-12 text-center">
                         <h1 style="margin-top: -90px; font-size: 48px;">
-                            KAdmin</h1>
+                            Login MataLayan</h1>
                         <br />
                     </div>
                     <div class="form-group">
@@ -31,10 +31,10 @@
                         </div>
                         <div class="col-md-9 text-center">
                             <h1>
-                                Hold on, please.</h1>
+                                Harap login</h1>
                             <br />
                             <p>
-                                Just sign in and we’ll send you on your way</p>
+                                untuk masuk ke dashboard MataLayan</p>
                         </div>
                     </div>
                     <div class="form-group">

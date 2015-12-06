@@ -8,7 +8,6 @@ include("menu.php"); ?>
             <ol class="carousel-indicators">
                 <li data-target="#main-slider" data-slide-to="0" class="active"></li>
                 <li data-target="#main-slider" data-slide-to="1"></li>
-                <li data-target="#main-slider" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
 
@@ -18,8 +17,8 @@ include("menu.php"); ?>
                             <div class="col-sm-6">
                                 <div class="carousel-content">
 									<i>Featured PNS</i>
-                                    <h1 class="animation animated-item-1">Joko Widodo</h1>
-                                    <h2 class="animation animated-item-2">Joko adalah PNS yang bekerja di kantor kelurahan cijengkol. Dia dikenal rajin, baik hati dan suka menabung.</h2>
+                                    <h1 class="animation animated-item-1">Herman Mandowen</h1>
+                                    <h2 class="animation animated-item-2">Herman adalah PNS yang bekerja di kantor kelurahan cijengkol. Dia dikenal rajin, baik hati dan suka menabung.</h2>
                                     <a class="btn-slide animation animated-item-3" href="story.php">Baca kisahnya</a>
                                 </div>
                             </div>
@@ -40,7 +39,7 @@ include("menu.php"); ?>
                             <div class="col-sm-6">
                                 <div class="carousel-content">
 									<i>Featured PNS</i>
-                                    <h1 class="animation animated-item-1">Susilo Bambang Yudhoyono</h1>
+                                    <h1 class="animation animated-item-1">Asep Susmono</h1>
                                     <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
                                     <a class="btn-slide animation animated-item-3" href="story.php">Read More</a>
                                 </div>
@@ -52,26 +51,6 @@ include("menu.php"); ?>
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
-                </div><!--/.item-->
-
-                <div class="item" style="background-image: url(images/slider/bg3.jpg)">
-                    <div class="container">
-                        <div class="row slide-margin">
-                            <div class="col-sm-6">
-                                <div class="carousel-content">
-									<i>Featured PNS</i>
-                                    <h1 class="animation animated-item-1">Megawati</h1>
-                                    <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="story.php">Read More</a>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 hidden-xs animation animated-item-4">
-                                <div class="slider-img">
-                                    <img src="images/slider/img3.png" class="img-responsive">
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div><!--/.item-->
@@ -323,7 +302,7 @@ include("menu.php"); ?>
 		</div>   
 	</section>			
 				
-
+<!--
     <section id="partner">
         <div class="container">
             <div class="center wow fadeInDown">
@@ -340,10 +319,10 @@ include("menu.php"); ?>
                     <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="images/partners/partner5.png"></a></li>
                 </ul>
             </div>        
-        </div><!--/.container-->
+        </div><!--/.container--
     </section><!--/#partner-->
 
-	<!-- -->
+	<!-- --
     <section id="conatcat-info">
         <div class="container">
             <div class="row">
@@ -359,7 +338,7 @@ include("menu.php"); ?>
                     </div>
                 </div>
             </div>
-        </div><!--/.container-->
+        </div><!--/.container--
     </section><!--/#conatcat-info-->
 
 	<!--

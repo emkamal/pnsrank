@@ -1,5 +1,5 @@
 <?php include("header.php"); ?>
-<?php $area = "menu";
+<?php $area = "profile";
 include("menu.php"); ?>
 	<section id="profile">
 		<div class="container">
@@ -9,7 +9,7 @@ include("menu.php"); ?>
 				</div>
 				<div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1000ms">
 					<div class="feature-wrap">
-						<h2>Joko Widodo</h2>
+						<h2>Endah Sianturi</h2>
 						<h3>Area tugas: Administrasi kependudukan</h3>
 						<h3>Wilayah tugas: Sidoarja, Kalimantan Barat Daya</h3>
 						<h3>Motto:</h3>

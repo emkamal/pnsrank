@@ -19,7 +19,7 @@
                         <li class=""><a href="index.php#lencana">Lencana</a></li>
                         <li class=""><a href="index.php#statistik">Statistik</a></li>
                         <li class=""><a href="index.php#peta">Peta</a></li>
-                        <li class=""><a href="dashboard/login.html">Login</a></li>                      
+                        <li class=""><a href="dashboard/login.php">Login</a></li>                      
                     </ul>
 					<!--
                     <ul class="nav navbar-nav">
@@ -44,7 +44,8 @@
             </div><!--/.container-->
         </nav><!--/nav-->		
     </header><!--/header-->
-	<?php if($area != "menu"){?>
+	<?php 
+	if($area != "menu" && $area != "profile" && $area != "Kredit" && $area != "Kisah"){?>
 	<div class="pagebar">
 		<div class="container">
 			Portal area <?php echo $area; ?>
@@ -69,10 +70,11 @@
 		</select>
 		</div>
 		</div>
-	<?php } else{ ?>
+	<?php }
+	else{ ?>
 		<div class="pagebar">
 		<div class="container">
-			Profil PNS Pelayan Publik
+			<?php echo $area; ?>
 		</select>
 		</div>
 		</div>

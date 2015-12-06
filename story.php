@@ -1,11 +1,12 @@
-<?php include("header.php"); ?>
-<?php include("menu.php"); ?>
+<?php include("header.php"); 
+$area = "Kisah";
+ include("menu.php"); ?>
 
 
     <section id="blog" class="container">
         <div class="center">
-            <h2>Blogs</h2>
-            <p class="lead">Pellentesque habitant morbi tristique senectus et netus et malesuada</p>
+            <h2>Kisah</h2>
+            <p class="lead">Kumpulan profil dan kisah inspiratif tentang para PNS pelayan publik teladan dan berprestasi</p>
         </div>
 
         <div class="blog">
