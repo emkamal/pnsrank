@@ -12,6 +12,13 @@
             </div>
         </div>
     </footer><!--/#footer-->
+	
+	<?php if($floatingText != null){ ?>
+	<div class="floatingbar">
+		<?php echo $floatingText; ?>
+		<a class="closebutton" title="close this" href="#">Tutup</a>
+	</div>
+	<?php } ?>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -151,5 +151,11 @@
 
 
 </script>
+
+<div class="floatingbar">
+		Halaman ini berisi data-data layanan yang sudah dimasukkan oleh sang petugas. Jika Anda login sebagai pejabat kantor, maka akan terlihat nama petugas yang melakukan pelayanan beserta dengan rating pelayanan yang telah diberikan oleh warga.
+		<a class="closebutton" title="close this" href="#">Tutup</a>
+	</div>
+	
 </body>
 </html>

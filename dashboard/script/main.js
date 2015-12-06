@@ -333,6 +333,10 @@ $(function () {
     });
     // CALL FUNCTION RESPONSIVE TABS
     fakewaffle.responsiveTabs(['xs', 'sm']);
+	
+	$(".closebutton").on("click", function(){
+		$(this).parent().fadeOut();
+	});
 
 });
 

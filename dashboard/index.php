@@ -309,5 +309,9 @@
 
 
 </script>
+<div class="floatingbar">
+		Halaman ini berisi informasi dari petugas pelayanan publik yang sudah login ke sistem. Setiap petugas dan atasan mereka dapat melihat feedback dan skor dari warga yang mereka layani. Selain itu terdapat juga informasi dan grafik mengenai skor keseluruhan dari pegawai lain yang berada di satu kantor.<br/><br/>Di sebelah kiri, terdapat link 'input data' untuk memasukan data pelayanan baru; 'Data Pelayanan' untuk melihat status pelayanan yang sudah dibuat; dan tab 'Feedback' yang berisi kesan, pesan, dan saran dari warga untuk petugas tersebut..</b>
+		<a class="closebutton" title="close this" href="#">Tutup</a>
+	</div>
 </body>
 </html>

@@ -195,5 +195,12 @@ $idPNS = $_SESSION['loggedInPNS'];
 
 
 </script>
+
+
+
+<div class="floatingbar">
+		Halaman ini berisi feedback yang diberikan oleh warga atas pelayanan yang diberikan oleh sang petugas. Dari sini bisa dilihat rating pelayanan dan juga komentar dari warga. Nama warga tidak akan bisa dilihat oleh sang petugas. Melalui halaman ini, petugas dapat menjadikannya sebagai bahan masukan untuk memperbaiki kualitas pelayanannya dan tentu juga dapat menerima apresiasi secara langsung dari warga yang dilayaninya.
+		<a class="closebutton" title="close this" href="#">Tutup</a>
+	</div>
 </body>
 </html>

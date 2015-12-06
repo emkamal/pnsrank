@@ -5,16 +5,16 @@ include("menu.php"); ?>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-					<img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
+					<img class="img-responsive" src="images/portfolio/recent/kamal.jpg" alt="">
 				</div>
 				<div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1000ms">
 					<div class="feature-wrap">
-						<h2>Endah Sianturi</h2>
+						<h2>Mustafa Kamal</h2>
 						<h3>Area tugas: Administrasi kependudukan</h3>
 						<h3>Wilayah tugas: Sidoarja, Kalimantan Barat Daya</h3>
 						<h3>Motto:</h3>
 						<blockquote>
-							"sud fuew fuweohfouwehfoewhf oewhfoe foehfojwefojwefoew foewf oefowe fowe foeh foje feof ejf ewfew hfouwehfuoweh"
+							"Jadikan hidup bermanfaat buat orang lain"
 						</blockquote>
 						<br/><br/>
 						<h2>Lencana penghargaan</h2>
@@ -36,4 +36,5 @@ include("menu.php"); ?>
 	<br/>
 	<br/>
 
+	<?php $floatingText = "Ini adalah halaman profil PNS pelayan publik. Nantinya diharapkan semua PNS pelayan publik di Indonesia bisa ditampilkan datanya disini. Disertai dengan skor pelayanannya yang merupakan hasil kalkulasi dari rating yang diberikan oleh warga yang dilayaninya. Halaman ini juga berisi badge-badge penghargaan yang didapatkan oleh PNS tersebut melalui sistem gamifikasi MataLayan. <a href='dashboard/login.php'>Klik disini untuk login ke dashboard MataLayan!</a>"; ?>
     <?php include("footer.php"); ?>

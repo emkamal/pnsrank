@@ -72,7 +72,7 @@ else{
                         <div class="col-md-9">
                             <div class="input-icon right">
                                 <i class="fa fa-user"></i>
-                                <input id="inputName" name="inputName" type="text" placeholder="" class="form-control" /></div>
+                                <input id="inputName" name="inputName" type="text" placeholder="" class="form-control" value="arisu" /></div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -81,7 +81,7 @@ else{
                         <div class="col-md-9">
                             <div class="input-icon right">
                                 <i class="fa fa-lock"></i>
-                                <input id="inputPassword" name="inputPassword" type="text" placeholder="" class="form-control" /></div>
+                                <input id="inputPassword" name="inputPassword" type="password" placeholder="" class="form-control" value="arisu" /></div>
                         </div>
                     </div>
                     <div class="form-group mbn">
@@ -103,6 +103,11 @@ else{
             </div>
         </div>
     </div>
+	
+	<div class="floatingbar">
+		Ini adalah halamn login untuk bisa masuk ke bagian dashboard MataLayan. Anda bisa login sebagai PNS pelayan publik untuk menginput data layanan yang dilakukannya dan juga dapat melihat skor pelayanan, feedback warga dan juga beberapa statistik terkait performa pelayanannya. <b>Untuk login, Anda bisa menggunakan kombinasi username "asep" dan password "asep". User lain yang bisa digunakan untuk pengujian adalah username "arisu" dan password "arisu".</b>
+		<a class="closebutton" title="close this" href="#">Tutup</a>
+	</div>
 </body>
 </html>
 <?php } ?>

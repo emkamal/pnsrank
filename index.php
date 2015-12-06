@@ -141,10 +141,10 @@ include("menu.php"); ?>
             <div class="row">
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item1.png" alt="">
+                        <img class="img-responsive" src="images/portfolio/recent/kamal.jpg" alt="">
                         <div class="overlay">
                             <div class="recent-work-inner">
-                                <h3><a href="profile.php">Dadang Suherman</a> </h3>
+                                <h3><a href="profile.php">Mustafa Kamal</a> </h3>
                                 <p>Skor pelayanan: 78</p>
                                 <!--<a class="preview" href="images/portfolio/full/item1.png" rel="prettyPhoto"><i class="fa fa-eye"></i> View</a>-->
                             </div> 
@@ -154,10 +154,10 @@ include("menu.php"); ?>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item2.png" alt="">
+                        <img class="img-responsive" src="images/portfolio/recent/ken.jpg" alt="">
                         <div class="overlay">
                             <div class="recent-work-inner">
-                                <h3><a href="profile.php">Dudung Sugiman</a></h3>
+                                <h3><a href="profile.php">Ken Danniswara</a></h3>
                                 <p>Skor pelayanan: 65</p>
                                 <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
                             </div> 
@@ -167,10 +167,10 @@ include("menu.php"); ?>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
+                        <img class="img-responsive" src="images/portfolio/recent/syafiq.jpg" alt="">
                         <div class="overlay">
                             <div class="recent-work-inner">
-                                <h3><a href="profile.php">Mang Engking</a></h3>
+                                <h3><a href="profile.php">Syafiq Al Atiiq</a></h3>
                                 <p>Skor pelayanan: 87</p>
                                 <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
                             </div> 
@@ -180,10 +180,10 @@ include("menu.php"); ?>
 
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
-                        <img class="img-responsive" src="images/portfolio/recent/item4.png" alt="">
+                        <img class="img-responsive" src="images/portfolio/recent/arif.jpg" alt="">
                         <div class="overlay">
                             <div class="recent-work-inner">
-                                <h3><a href="profile.php">Haji Sabeni</a></h3>
+                                <h3><a href="profile.php">Muhammad Arif</a></h3>
                                 <p>Skor pelayanan: 98</p>
                                 <a href="profile.php" ><i class="fa fa-eye"></i> View</a>
                             </div> 
@@ -387,7 +387,7 @@ include("menu.php"); ?>
 				
 				<div class="col-sm-6 wow fadeInDown">
                     <div class="skill">
-                        <h2>Keluarahan Terbaik</h2>
+                        <h2>Kelurahan Terbaik</h2>
                         <p>Ini adalah daftar 4 kelurahan yang skor pelayanan publiknya paling tinggi di <?php echo $area; ?> </p>
 
                         <div class="progress-wrap">
@@ -647,5 +647,6 @@ include("menu.php"); ?>
             </div>
         </div>
     </section><!--/#bottom-->
-
+	
+	<?php $floatingText = "Ini adalah contoh halaman publik dari MataLayan. Ketika user pertama kali mengunjungi web publik dari MataLayan, maka dia akan diarahkan ke portal MataLayan publik khusus untuk daerahnya. Portal MataLayan publik berisi daftar highlight PNS teladan, lencana penghargaan yang merupakan wujud dari strategi gamifikasi pelayanan publik, statistik wilayah terbaik dan peta untuk melihat data performa pelayanan publik per daerah. <a href='beranda.php'>Klik disini untuk melihat beranda tingkat nasional!</a>"; ?>
     <?php include("footer.php"); ?>

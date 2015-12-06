@@ -406,5 +406,5 @@ include("menu.php"); ?>
             </div>
         </div>
     </section><!--/#bottom-->
-
+<?php $floatingText = "Ini adalah contoh halaman publik <u>nasional</u> dari MataLayan. Halaman ini tampak mirip dengan portal publik per daerah, namun konten disini hanya diisi dengan informasi yang relevan di tingkat nasional. Disini user bisa melihat statistik nasional data performa pelayanan publik. Kedepannya sistem juga diharapkan akan mampu memberikan insight otomatis yang diekstrak dari data yang terkumpul dengan teknik big data analysis dan machine learning. <a href='profile.php'>Klik disini untuk melihat contoh halaman profil PNS!</a>"; ?>
     <?php include("footer.php"); ?>

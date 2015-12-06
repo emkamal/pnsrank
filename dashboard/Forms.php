@@ -203,5 +203,11 @@ $dataPNS = mysqli_fetch_assoc($result);
 
 
 </script>
+
+<div class="floatingbar">
+		Dari sini petugas dapat mengisi data mengenai pelayanan yang baru saja dilakukannya. Salah satu isian paling penting disini adalah no handphone warga yang dilayani. Ketika petugas mengklik tombol submit pada form ini, maka sistem akan secara otomatis mengirim SMS ke no HP warga yang sudah diinput untuk meminta feedback dari mereka. Warga dapat memberikan rating dengan rentang angka 1-5 dan diikuti dengan komentarnya terhadap pelayanan yang diberikan. Komentar dapat berupa kritik, saran maupun apresiasi. Balasan SMS mereka akan otomatis disimpan oleh sistem dan masuk ke dalam sistem scoring pelayanan petugas. 
+		<a class="closebutton" title="close this" href="#">Tutup</a>
+	</div>
+	
 </body>
 </html>
